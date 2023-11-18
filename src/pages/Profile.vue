@@ -175,33 +175,53 @@
           <table class="min-w-full divide-y divide-gray-200 border border-gray-300">
             <thead>
               <tr>
-                <th class="px-6 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                <th class="px-2 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
                   Project Name
                 </th>
-                <th class="px-6 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                <th class="px-2 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
                   Total Allocated Tokens
                 </th>
-                <th class="px-6 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                <th class="px-2 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
                   Remained Tokens
                 </th>
-                <th class="px-6 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                <th class="px-2 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                  Reward Amount
+                </th>
+                <th class="px-2 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
                   Total Participants
+                </th>
+                <th class="px-2 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                  Aidrop Start Date
+                </th>
+                <th class="px-2 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                  Aidrop End Date
+                </th>
+                <th class="px-2 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                  Status
                 </th>
               </tr>
             </thead>
             <tbody>
               <!-- Example row -->
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap">Project A</td>
-                <td class="px-6 py-4 whitespace-nowrap">100,000</td>
-                <td class="px-6 py-4 whitespace-nowrap">30,000</td>
-                <td class="px-6 py-4 whitespace-nowrap">500</td>
+                <td class="px-2 py-4 whitespace-nowrap">Project A</td>
+                <td class="px-2 py-4 whitespace-nowrap">100,000</td>
+                <td class="px-2 py-4 whitespace-nowrap">30,000</td>
+                <td class="px-2 py-4 whitespace-nowrap">10</td>
+                <td class="px-2 py-4 whitespace-nowrap">500</td>
+                <td class="px-2 py-4 whitespace-nowrap">01/01/2020</td>
+                <td class="px-2 py-4 whitespace-nowrap">02/01/2020</td>
+                <td class="px-2 py-4 whitespace-nowrap">Scheduled</td>
               </tr>
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap">Project A</td>
-                <td class="px-6 py-4 whitespace-nowrap">100,000</td>
-                <td class="px-6 py-4 whitespace-nowrap">30,000</td>
-                <td class="px-6 py-4 whitespace-nowrap">500</td>
+                <td class="px-2 py-4 whitespace-nowrap">Project B</td>
+                <td class="px-2 py-4 whitespace-nowrap">100,000</td>
+                <td class="px-2 py-4 whitespace-nowrap">30,000</td>
+                <td class="px-2 py-4 whitespace-nowrap">10</td>
+                <td class="px-2 py-4 whitespace-nowrap">500</td>
+                <td class="px-2 py-4 whitespace-nowrap">01/01/2020</td>
+                <td class="px-2 py-4 whitespace-nowrap">02/01/2020</td>
+                <td class="px-2 py-4 whitespace-nowrap">Ended</td>
               </tr>
               <!-- Add more rows with project details -->
             </tbody>
