@@ -1,66 +1,42 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://dropzey.com" target="_blank"><img src="https://dropzey.com/src/assets/logo.png" width="400" alt="Dropzey Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# Dropzey
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Dropzey, a revolutionary web application built on the Stellar blockchain and integrated with the Soroban smart contract technology. Dropzey has been designed to offer a seamless and secure solution for both airdrop creators and participants, addressing many of the persistent challenges within the airdrop ecosystem.
 
-## Learning Laravel
+## Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Airdrop Automation**: One of the core pillars of the Dropzey solution is the automation of airdrop processes. Airdrop creators can easily initiate and manage campaigns through the platform, eliminating the need for the time-consuming and costly manual distribution of tokens. Smart contracts facilitate the automatic and secure allocation of tokens to eligible participants, streamlining the entire process.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- **Eligibility and Verification**: The platform simplifies the process of setting eligibility criteria for airdrop participants. Creators can specify conditions, such as wallet age or specific actions required, minimizing the risk of non-eligible participants joining the campaign. By automating the eligibility verification process, Dropzey enhances security and reduces the burden on creators.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **Enhanced Participant Engagement**: To encourage meaningful engagement beyond the airdrop itself, Dropzey guides participants through the required actions. This can include following social media accounts, or other project-specific activities. By doing so, Dropzey fosters a stronger connection between participants and the projects they engage with.
 
-## Laravel Sponsors
+- **Security by Design**: Dropzey prioritizes security throughout the airdrop process. By automating the distribution, the platform reduces the risk of manual errors. Additionally, Dropzey's architecture includes robust security measures to safeguard user data and protect against fraudulent activities.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- **Transparent Token Utility**: Dropzey strives to provide comprehensive information about the utility of airdropped tokens within the project's ecosystem. This transparency helps participants better assess the value and relevance of the tokens they receive.
 
-### Premium Partners
+- **Soroban Smart Contract Integration**: TokenGlade is actively integrating Soroban smart contract features, including deployment, ledger entry inspection, and contract event viewing, to empower users with advanced blockchain capabilities.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## Getting Started
 
-## Contributing
+To get started with Dropzey, follow these steps:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. Visit our official website: [Dropzey](https://www.dropzey.com)
+2. Sign up for an account or log in if you already have one.
+3. Connect your Stellar wallets securely using our integrated external wallet options.
+4. Explore the various airdrop feature.
+5. Stay tuned for exciting updates as we integrate Soroban smart contract functionalities.
 
-## Code of Conduct
+## Contribution
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+We welcome contributions from the community to enhance Dropzey further. Whether it's bug fixes, new features, or improvements, please feel free to contribute by creating pull requests.
 
-## Security Vulnerabilities
+## Contact Us
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+If you have any questions, feedback, or need assistance, don't hesitate to [contact us](mailto:info@dropzey.com). We're here to help!
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Thank you for choosing Dropzey for your airdrop management needs.
