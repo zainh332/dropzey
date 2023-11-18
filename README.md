@@ -19,8 +19,6 @@ Dropzey, a revolutionary web application built on the Stellar blockchain and int
 
 - **Transparent Token Utility**: Dropzey strives to provide comprehensive information about the utility of airdropped tokens within the project's ecosystem. This transparency helps participants better assess the value and relevance of the tokens they receive.
 
-- **Soroban Smart Contract Integration**: TokenGlade is actively integrating Soroban smart contract features, including deployment, ledger entry inspection, and contract event viewing, to empower users with advanced blockchain capabilities.
-
 ## Getting Started
 
 To get started with Dropzey, follow these steps:
