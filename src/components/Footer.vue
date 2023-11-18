@@ -100,7 +100,7 @@ import logo from "@/assets/logo.png";
 
 const navigation = {
   solutions: [
-    { name: "About us", href: "/create-airdrop", current: false},
+    { name: "About us", href: "#", current: false},
     // { name: "Airdrop Calendar", href: "#" },
     // { name: "Exchanges", href: "#" },
     // { name: "List Airdrop", href: "#" },

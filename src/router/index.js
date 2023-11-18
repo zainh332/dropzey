@@ -17,34 +17,54 @@ const router = createRouter({
       name: "LandingPage",
       component: LandingPage,
       meta: {
-        title: "Home | Dropzey",
-        description: "test"
+        title: "Home",
+        description: ""
       },
     },
     {
       path: "/HomePage",
       name: "HomePage",
       component: HomePage,
+      meta: {
+        title: "Home",
+        description: ""
+      },
     },
     {
       path: "/airdrop",
       name: "airdrop",
       component: Airdrop,
+      meta: {
+        title: "Airdrop",
+        description: ""
+      },
     },
     {
       path: "/airdrops",
       name: "Airdrops",
       component: Airdrops,
+      meta: {
+        title: "Airdrop",
+        description: ""
+      },
     },
     {
       path: "/profile",
       name: "Profile",
       component: Profile,
+      meta: {
+        title: "Profile",
+        description: ""
+      },
     },
     {
       path: "/explorer",
       name: "Explorer",
       component: Explorer,
+      meta: {
+        title: "Explorer",
+        description: ""
+      },
     },
     {
       path: "/create-airdrop",
@@ -61,6 +81,12 @@ const router = createRouter({
       component: Components,
     },
   ],
+});
+
+// Set the page title dynamically when the route changes
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title + "  | Dropzey";
+  next();
 });
 
 export default router;

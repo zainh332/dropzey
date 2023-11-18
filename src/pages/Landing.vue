@@ -9,7 +9,7 @@
               Empowering Airdrop Creators and Participants
             </h1>
             <p class="mt-6 text-base leading-10 text-gray-400">
-              Simplify Airdrops, Boost Engagement, and Earn Rewards with Dropzey
+              Simplify Airdrops, Boost Engagement, and Earn Rewards Instantly with Dropzey
             </p>
             <div class="mt-10 flex items-center gap-x-6">
               <a

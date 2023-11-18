@@ -652,6 +652,17 @@
           >Create Airdrop</a
         >
       </div>
+
+      <!-- If User is not logged In  -->
+      <!-- <div class="mt-8 flex items-center gap-x-6 w-full" data-v-933e9cdf="" data-v-0a3af7de="" data-v-8b4eb8e5="">
+        <a href="#"
+          class="mx-auto text-center rounded-full text-gray-600 bg-gray-100 bg_gradient px-14 py-3 text-sm font-semibold text-white shadow-sm"
+          data-v-933e9cdf=""
+          data-v-0a3af7de=""
+          data-v-8b4eb8e5=""
+          >Sign In</a
+        >
+      </div> -->
     </div>
     <Footer />
   </div>
