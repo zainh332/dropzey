@@ -263,7 +263,7 @@
               :src="StepsBanner"
               alt=""
             />
-            <div class="absolute top-10 px-12 max-w-lg">
+            <!-- <div class="absolute top-10 px-12 max-w-lg">
               <h1 class="text-2xl sm:text-4xl font-semibold text-white my-12">
                 Follow the steps to Claim Airdrop
               </h1>
@@ -274,7 +274,7 @@
                   Explore Now
                 </button>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -295,7 +295,7 @@
       </div>
     </section>
 
-    <section>
+    <!-- <section>
       <div class="text-md sm:text-lg">
         <p>
           <b>Bonus Rewards:</b> CashFinance.App offers a tiered referral system
@@ -315,7 +315,7 @@
           depositing or investing their funds.
         </p>
       </div>
-    </section>
+    </section> -->
     <section>
       <div
         class="flex flex-col sm:flex-row items-center gap-x-4 max-w-3xl mt-5"
