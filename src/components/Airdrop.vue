@@ -110,7 +110,7 @@
           <div
             class="tag border-2 text-[12px] text-[#00000080]/50 font-semibold border-[#00000080]/50 px-3 py-1.5 rounded-full"
           >
-            3 Days Left
+          Airdrop Ends in 3 Days
           </div>
           <div
             class="tag0 text-white text-[12px] bg-[#EC4963] font-semibold px-3 py-1.5 rounded-full"
