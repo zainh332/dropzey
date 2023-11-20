@@ -484,7 +484,7 @@
           <div class="">
             <div class="">
               <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
-                Twitter Tweet Link
+                Twitter Like/Retweet Link
                 <svg
                   v-tooltip="'Enter your Tweet link here for participants to like and retweet'"
                   xmlns="http://www.w3.org/2000/svg"

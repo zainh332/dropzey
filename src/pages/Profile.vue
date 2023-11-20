@@ -123,7 +123,7 @@
             <!-- When wallet is not connected -->
             <!-- <button class="flex items-center justify-center gap-2 border bg-gray-100 rounded-full px-10 py-1.5 w-full sm:w-auto">
               <span class="text-s text-gray-500 font-medium">
-                Reserve Tokens
+                Connect Wallet
               </span>
             </button> -->
 
@@ -175,28 +175,34 @@
           <table class="min-w-full divide-y divide-gray-200 border border-gray-300">
             <thead>
               <tr>
-                <th class="px-2 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
                   Project Name
                 </th>
-                <th class="px-2 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                  Wallet Connected
+                </th>
+                <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                  Transactions
+                </th>
+                <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
                   Total Allocated Tokens
                 </th>
-                <th class="px-2 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
                   Remained Tokens
                 </th>
-                <th class="px-2 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
                   Reward Amount
                 </th>
-                <th class="px-2 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
                   Total Participants
                 </th>
-                <th class="px-2 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
                   Aidrop Start Date
                 </th>
-                <th class="px-2 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
                   Aidrop End Date
                 </th>
-                <th class="px-2 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
                   Status
                 </th>
               </tr>
@@ -205,6 +211,8 @@
               <!-- Example row -->
               <tr>
                 <td class="px-2 py-4 whitespace-nowrap">Project A</td>
+                <td class="px-2 py-4 whitespace-nowrap">GARKN....ZUAKVNLN6</td>
+                <td class="px-2 py-4 whitespace-nowrap">100,000</td>
                 <td class="px-2 py-4 whitespace-nowrap">100,000</td>
                 <td class="px-2 py-4 whitespace-nowrap">30,000</td>
                 <td class="px-2 py-4 whitespace-nowrap">10</td>
@@ -215,7 +223,9 @@
               </tr>
               <tr>
                 <td class="px-2 py-4 whitespace-nowrap">Project B</td>
-                <td class="px-2 py-4 whitespace-nowrap">100,000</td>
+                <td class="px-2 py-4 whitespace-nowrap">GARKN....ZUAKVNLN6</td>
+                <td class="px-2 py-4 whitespace-nowrap">30,000</td>
+                <td class="px-2 py-4 whitespace-nowrap">30,000</td>
                 <td class="px-2 py-4 whitespace-nowrap">30,000</td>
                 <td class="px-2 py-4 whitespace-nowrap">10</td>
                 <td class="px-2 py-4 whitespace-nowrap">500</td>

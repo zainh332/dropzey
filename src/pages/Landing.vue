@@ -9,7 +9,7 @@
               Empowering Airdrop Creators and Participants
             </h1>
             <p class="mt-6 text-base leading-10 text-gray-400">
-              Simplify Airdrops, Boost Engagement, and Earn Rewards Instantly with Dropzey
+              Simplify Airdrops, Boost Engagement, and Earn Airdrop Rewards Instantly with Dropzey
             </p>
             <div class="mt-10 flex items-center gap-x-6">
               <a
@@ -60,7 +60,7 @@
             Dropzey Solution
           </h1>
           <p class="mt-6 text-base leading-10 text-gray-400">
-            Explore Dropzey's streamlined solution offering automation, security, and user-friendliness for airdrop campaigns.
+            Dropzey's streamlined solution offering automation, security, and user-friendliness for airdrop campaigns.
           </p>
         </div>
         <div class="grid md:grid-cols-3 max-w-3xl my-12 gap-6 mx-auto items-center">
@@ -114,103 +114,16 @@
           </div>
         </div>
       </div>
-      <div class="h-0.5 bg-red-900 w-full bg_gradient relative">
-        <div class="card absolute h-12 -top-10 left-[40%] md:left-[48%]">
-          <img :src="logoFire" alt="" />
-        </div>
-      </div>
+      
     </div>
     <!-- section no 4 -->
-    <section>
-      <div class="py-12 md:py-32 px-4">
-        <div class="max-w-5xl mx-auto text-center">
-          <h1 class="max-w-2xl mx-auto text_gradient leading-loose bg-black text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            Explore Our Airdrops
-          </h1>
-          <p class="mt-6 text-base leading-10 text-gray-400">
-            Discover diverse airdrop opportunities in the crypto world. Engage, earn, and be part of the future of decentralized finance effortlessly.
-          </p>
-        </div>
-        <div class="max-w-7xl mx-auto py-10">
-          <Card />
-        </div>
-        <div class="text-center">
-          <router-link to="/airdrops">
-            <button class="border border-[#0298B1] rounded-full py-2 px-10 font-semibold font-gradient">
-              Explore Now
-            </button>
-          </router-link>
-        </div>
-      </div>
-    </section>
-    <!-- section no 5 -->
-    <section>
-      <div class="px-4 bg-blue-100 py-16">
-        <div class="max-w-5xl mx-auto text-center">
-          <h1 class="max-w-2xl mx-auto text_gradient leading-loose bg-black text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            Top Earning Wallets
-          </h1>
-          <p class="mt-6 text-base leading-10 text-gray-400">
-            Explore these wallets airdrop earnings and transaction details to witness their remarkable success
-          </p>
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto my-16">
-          <div class="bg-card">
-            <p class="text-gray-500 text-md">Wallet Address</p>
-            <p class="text-gray-900 font-bold text-md">
-              GARATAHLKN....ZUJKMALQKVNLN6
-            </p>
-            <p class="text-gray-500 text-md mt-4">Total Airdrop Earnings:</p>
-            <p class="text-2xl font-bold">$500</p>
-            <div class="mt-4 flex items-center gap-x-6 w-full">
-              <a
-                href="#"
-                class="w-full text-center rounded-full text-gray-600 bg-gray-100 bg_hover_gradient px-14 py-3 text-sm font-semibold hover:text-white shadow-sm"
-                >View Transactions</a
-              >
-            </div>
-          </div>
-          <div class="bg-card">
-            <p class="text-gray-500 text-md">Wallet Address</p>
-            <p class="text-gray-900 font-bold text-md">
-              GARATAHLKN....ZUJKMALQKVNLN6
-            </p>
-            <p class="text-gray-500 text-md mt-4">Total Airdrop Earnings:</p>
-            <p class="text-2xl font-bold">$500</p>
-            <div class="mt-4 flex items-center gap-x-6 w-full">
-              <a
-                href="#"
-                class="w-full text-center rounded-full text-gray-600 bg-gray-100 bg_hover_gradient px-14 py-3 text-sm font-semibold hover:text-white shadow-sm"
-                >View Transactions</a
-              >
-            </div>
-          </div>
-          <div class="bg-card">
-            <p class="text-gray-500 text-md">Wallet Address</p>
-            <p class="text-gray-900 font-bold text-md">
-              GARATAHLKN....ZUJKMALQKVNLN6
-            </p>
-            <p class="text-gray-500 text-md mt-4">Total Airdrop Earnings:</p>
-            <p class="text-2xl font-bold">$500</p>
-            <div class="mt-4 flex items-center gap-x-6 w-full">
-              <a
-                href="#"
-                class="w-full text-center rounded-full text-gray-600 bg-gray-100 bg_hover_gradient px-14 py-3 text-sm font-semibold hover:text-white shadow-sm"
-                >View Transactions</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- section no 6 -->
     <section>
       <div class="max-w-5xl mx-auto my-8 text-center px-4 py-8">
         <h1 class="max-w-2xl mx-auto text_gradient leading-loose bg-black text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
           How It Works
         </h1>
         <p class="mt-6 text-base leading-10 text-gray-400">
-          Explore how participants engage in Dropzey's airdrop process effortlessly.
+          Explore how participants engage in Dropzey's airdrop process effortlessly to earn rewards.
         </p>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto my-16">
@@ -261,7 +174,96 @@
         </div>
       </div>
     </section>
+    <!-- section no 5 -->
+    <section>
+      <div class="py-12 md:py-32 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+          <h1 class="max-w-2xl mx-auto text_gradient leading-loose bg-black text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            Explore Our Airdrops
+          </h1>
+          <p class="mt-6 text-base leading-10 text-gray-400">
+            Discover diverse airdrop opportunities in the crypto world. Engage, earn, and be part of the future of decentralized finance effortlessly.
+          </p>
+        </div>
+        <div class="max-w-7xl mx-auto py-10">
+          <Card />
+        </div>
+        <div class="text-center">
+          <router-link to="/airdrops">
+            <button class="border border-[#0298B1] rounded-full py-2 px-10 font-semibold font-gradient">
+              Explore Now
+            </button>
+          </router-link>
+        </div>
+        
+      </div>
+      <div class="h-0.5 bg-red-900 w-full bg_gradient relative">
+        <div class="card absolute h-12 -top-10 left-[40%] md:left-[48%]">
+          <img :src="logoFire" alt="" />
+        </div>
+      </div>
+    </section>
     <!-- section no 6 -->
+    <section>
+      <div class="px-4 bg-blue-100 py-16">
+        <div class="max-w-5xl mx-auto text-center">
+          <h1 class="max-w-2xl mx-auto text_gradient leading-loose bg-black text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            Top Earning Wallets
+          </h1>
+          <p class="mt-6 text-base leading-10 text-gray-400">
+            Explore the extraordinary success of users who participated in the airdrop and earned rewards through Dropzey
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto my-16">
+          <div class="bg-card">
+            <p class="text-gray-500 text-md">Wallet Address</p>
+            <p class="text-gray-900 font-bold text-md">
+              GARATAHLKN....ZUJKMALQKVNLN6
+            </p>
+            <p class="text-gray-500 text-md mt-4">Total Airdrop Earnings:</p>
+            <p class="text-2xl font-bold">$500</p>
+            <div class="mt-4 flex items-center gap-x-6 w-full">
+              <a
+                href="#"
+                class="w-full text-center rounded-full text-gray-600 bg-gray-100 bg_hover_gradient px-14 py-3 text-sm font-semibold hover:text-white shadow-sm"
+                >View Wallet Transactions</a
+              >
+            </div>
+          </div>
+          <div class="bg-card">
+            <p class="text-gray-500 text-md">Wallet Address</p>
+            <p class="text-gray-900 font-bold text-md">
+              GARATAHLKN....ZUJKMALQKVNLN6
+            </p>
+            <p class="text-gray-500 text-md mt-4">Total Airdrop Earnings:</p>
+            <p class="text-2xl font-bold">$500</p>
+            <div class="mt-4 flex items-center gap-x-6 w-full">
+              <a
+                href="#"
+                class="w-full text-center rounded-full text-gray-600 bg-gray-100 bg_hover_gradient px-14 py-3 text-sm font-semibold hover:text-white shadow-sm"
+                >View Wallet Transactions</a
+              >
+            </div>
+          </div>
+          <div class="bg-card">
+            <p class="text-gray-500 text-md">Wallet Address</p>
+            <p class="text-gray-900 font-bold text-md">
+              GARATAHLKN....ZUJKMALQKVNLN6
+            </p>
+            <p class="text-gray-500 text-md mt-4">Total Airdrop Earnings:</p>
+            <p class="text-2xl font-bold">$500</p>
+            <div class="mt-4 flex items-center gap-x-6 w-full">
+              <a
+                href="#"
+                class="w-full text-center rounded-full text-gray-600 bg-gray-100 bg_hover_gradient px-14 py-3 text-sm font-semibold hover:text-white shadow-sm"
+                >View Wallet Transactions</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section no 7 -->
     <section>
       <div class="grid md:grid-cols-2 gap-y-6">
         <div class="max-w-xl mx-auto flex md:px-0 px-6 items-center jus">

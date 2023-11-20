@@ -7,6 +7,7 @@ import Airdrops from "@/pages/Airdrops.vue";
 import Profile from "@/pages/Profile.vue";
 import Explorer from "@/pages/Explorer.vue";
 import createAirdrop from "@/pages/createAirdrop.vue";
+import AboutUs from "@/pages/About-us.vue";
 
 
 const router = createRouter({
@@ -17,8 +18,8 @@ const router = createRouter({
       name: "LandingPage",
       component: LandingPage,
       meta: {
-        title: "Home",
-        description: ""
+        title: "Welcome to Dropzey",
+        description: "Discover a world of airdrops, and more. Join Dropzey for exciting opportunities in the crypto airdrop space"
       },
     },
     {
@@ -26,8 +27,8 @@ const router = createRouter({
       name: "HomePage",
       component: HomePage,
       meta: {
-        title: "Home",
-        description: ""
+        title: "Dropzey - Your Crypto Airdrop Platform",
+        description: "Explore the latest airdrops and crypto opportunities with Dropzey. Join now and participate in airdrops"
       },
     },
     {
@@ -44,8 +45,8 @@ const router = createRouter({
       name: "Airdrops",
       component: Airdrops,
       meta: {
-        title: "Airdrop",
-        description: ""
+        title: "Airdrops",
+        description: "Discover a variety of ongoing airdrops on Dropzey. Participate now and receive tokens from different projects and communities"
       },
     },
     {
@@ -72,7 +73,16 @@ const router = createRouter({
       component:createAirdrop ,
       meta: {
         title: "Create Airdrop",
-        description: "Explore the world of tokens with TokenGlade. Empower your journey into the Stellar universe and join the revolution in digital assets."
+        description: ""
+      },
+    },
+    {
+      path: "/about-us",
+      name: "aboutus",
+      component:AboutUs ,
+      meta: {
+        title: "About Us",
+        description: ""
       },
     },
     {

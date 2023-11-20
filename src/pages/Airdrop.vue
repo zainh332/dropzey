@@ -1,26 +1,16 @@
 <template>
-  <div class="relative">
-    <div class="bg-[#15344F] py-20">
-      <div class="text-center">
-        <img class="max-w-xl mx-auto" :src="Droplogo" alt="" />
-        <h1 class="text-[#BBEF57] text-3xl font-bold">CashFinance.app</h1>
-      </div>
-      <div class="max-w-7xl mx-auto pt-10">
-        <NewsCard2 />
-      </div>
-    </div>
-    <div class="h-0.5 bg-red-900 w-full bg_gradient">
-      <div class="card absolute h-12 -bottom-[1%] left-[40%] md:left-[48%]">
-        <img :src="logoFire" alt="" />
-      </div>
-    </div>
-  </div>
-  <div
-    class="max-w-7xl mx-auto rounded-3xl shadow-xl my-24 border border-gray-50 py-16 px-4 sm:px-12"
-  >
+  <div class="max-w-7xl mx-auto rounded-3xl shadow-xl my-24 border border-gray-10 py-16 px-4 sm:px-12">
     <section class="">
+      <img
+      class="w-full rounded-3xl py-4 max-w-7xl mx-auto object-cover"
+      :src="StepsBanner"
+      alt=""
+      style="height: 380px;"
+            />
       <div class="flex items-center justify-between min-w-[600px]">
+        
         <div class="">
+          
           <div class="flex items-center gap-4">
             <img :src="Droplogo" alt="" />
             <div class="">
@@ -102,7 +92,7 @@
             class="tag border-2 text-md text-[#00000080]/50 font-semibold border-[#00000080]/50 px-3 py-2 text-center rounded-full"
             data-v-122904cf=""
           >
-            3 Days Left
+            Airdrop Ends in 3 Days
           </div>
           <div class="flex items-center gap-4" data-v-122904cf="">
             <div
@@ -216,7 +206,7 @@
     <section>
       <div class="">
         <div class="text-md sm:text-lg mt-20">
-          <p>
+          <!-- <p>
             <a class="text-sky-500" href="">@CashFinanceApp</a>
             extends a warm welcome to newcomers through an exciting Gleam
             campaign, offering participants a total of 11,000 $USDT.
@@ -228,7 +218,7 @@
           </p>
           <br />
           <h1 class="text-xl font-semibold">About CashFinance.App</h1>
-          <br />
+          <br /> -->
           <p>
             <a class="text-sky-500" href="">CashFinance.App</a> is a beacon of
             disruptive innovation in the blockchain sector, providing a fully
@@ -237,32 +227,19 @@
             Centralized and Decentralized Exchanges, an ICO Launchpad, a Public
             Blockchain Network, a versatile digital Wallet, and a range of other
             utilities like Crypto Forex Services, DeFi, Tokenizing assets, NFTs,
-            and Escrow services for P2P trades.
-          </p>
-          <br />
-          <p>
-            Incorporating the $CFE token, the platform offers fee discounts and
+            and Escrow services for P2P trades. Incorporating the $CFE token, the platform offers fee discounts and
             is set to introduce a token burn strategy to prevent price dumping.
             Currently anchored to the Binance Smart Chain
             <a class="text-sky-500" href="">(BSC)</a> , a transition to the more
             efficient Proof of Stake (PoS) system is envisioned. Additionally,
             the MainNet aims to demystify smart contracts, eliminating the
-            necessity for coding expertise.
+            necessity for coding expertise. Winners will receive $10 worth of tokens, to be transferred to their wallet
+            addresses instantly.
           </p>
+         
           <br />
-          <!-- <h1 class="text-xl font-semibold">
-            How to join the CashFinance.App Airdrop?
-          </h1> -->
-          <br />
-          <h2 class="text-3xl font-bold mb-5">
-            Follow the steps to Claim Airdrop
-          </h2>
           <div class="relative max-w-7xl mx-auto">
-            <img
-              class="w-full rounded-3xl max-w-7xl mx-auto h-[300px] md:h-auto object-cover"
-              :src="StepsBanner"
-              alt=""
-            />
+            
             <!-- <div class="absolute top-10 px-12 max-w-lg">
               <h1 class="text-2xl sm:text-4xl font-semibold text-white my-12">
                 Follow the steps to Claim Airdrop
@@ -276,6 +253,10 @@
               </div>
             </div> -->
           </div>
+          <br />
+          <h2 class="text-3xl font-bold mb-5">
+            Follow the steps to Claim Airdrop
+          </h2>
         </div>
       </div>
     </section>

@@ -117,7 +117,7 @@ const navigation = [
   { name: "Create Airdrop", href: "/create-airdrop", current: false },
   { name: "Airdrops", href: "/airdrops", current: true },
   { name: "Explorer", href: "/explorer", current: false },
-  { name: "HomePage", href: "/HomePage", current: false },
+  { name: "About Us", href: "/about-us", current: false },
 ];
 
 const profileNavigation = [
