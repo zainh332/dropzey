@@ -113,7 +113,7 @@
     "src": "src/assets/umbrellas.png"
   },
   "src/main.css": {
-    "file": "assets/main-08bc9703.css",
+    "file": "assets/main-41842be3.css",
     "src": "src/main.css"
   },
   "src/main.js": {
@@ -138,16 +138,15 @@
       "assets/image 9-b574e02c.png",
       "assets/banner-f7a22257.png",
       "assets/image13-3ca450bf.png",
-      "assets/cardBallon-bc36263e.png",
       "assets/image 12-dd1d3376.png",
       "assets/7148456_Mesa de trabajo 1 2-35a1ced7.png",
       "assets/iconimage-8e87896a.png",
       "assets/abcexplorerBanner-4d6b944f.png"
     ],
     "css": [
-      "assets/main-08bc9703.css"
+      "assets/main-41842be3.css"
     ],
-    "file": "assets/main-9bbb468a.js",
+    "file": "assets/main-e3a4edfd.js",
     "isEntry": true,
     "src": "src/main.js"
   }
