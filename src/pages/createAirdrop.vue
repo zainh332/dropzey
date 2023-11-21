@@ -153,12 +153,22 @@
                   />
                 </svg>
               </h1>
-              <div class="">
+              <!-- <div class="">
                 <input
                   class="border border-gray-300 rounded-md pt-1.5 pb-20 px-2 w-full"
-                  type="teatarea"
+                  type="textarea"
                 />
+              </div> -->
+
+              <div class="pb-10">
+                <textarea
+                  class="border border-gray-300 rounded-md pt-1.5 pb-20 px-2 w-full"
+                  v-model="description"
+                  @input="updateCharacterCount"
+                ></textarea>
+                <div class="absolute bottom-2 right-2 text-sm text-gray-500">{{ characterCount }}/1000 characters</div>
               </div>
+
             </div>
           </div>
           <!-- <div class="">
@@ -245,9 +255,9 @@
           </div>
           <div class="">
               <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
-                Total Token Allocation <span style="color: red">*</span>
+                Total Tokens<span style="color: red">*</span>
                 <svg
-                  v-tooltip="'Enter the total number of tokens available or allocated for this purpose (e.g., 1000000)'"
+                  v-tooltip="'Specify the quantity of total tokens you want to distribute in the airdrop (e.g. 1000000)'"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -352,7 +362,7 @@
               <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
                 Reserve Total Allocated Tokens <span style="color: red">*</span>
                 <svg
-                  v-tooltip="'Make sure to reserve all the reward tokens you have set aside for the airdrop. Any remaining tokens after the airdrop ends will be returned to your wallet'"
+                  v-tooltip="'Make sure to reserve total tokens you have set for the airdrop. Any remaining tokens after the airdrop ends will be returned to your wallet'"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -693,6 +703,17 @@ const isChecked = ref(false);
 const YoutubevideoLinkisChecked = ref(false);
 const YoutubechannelisChecked = ref(false);
 
+const description = ref('');
+const characterCount = ref(0);
+
+function updateCharacterCount() {
+  characterCount.value = description.value.length;
+  // Limit the character count to 1000 characters
+  if (characterCount.value > 1000) {
+    description.value = description.value.slice(0, 1000);
+    characterCount.value = 1000;
+  }
+}
 
 </script>
 <style scoped>

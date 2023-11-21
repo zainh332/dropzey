@@ -23,7 +23,7 @@
               </span>
             </span>
             <span class="ml-4 flex min-w-0">
-              <span class="text-sm font-medium heading-step">{{
+              <span class="text-center rounded-full text-gray-600 bg-gray-100 bg_gradient px-6 py-3 text-sm font-semibold text-white shadow-sm">{{
                 step.name
               }}</span>
             </span>
@@ -47,7 +47,7 @@
               </span>
             </span>
             <span class="ml-4 flex min-w-0 flex-col">
-              <span class="text-sm font-medium text-gray-500 heading-step">{{
+              <span class="w-full text-center rounded-full text-gray-600 bg-gray-100 bg_hover_gradient px-6 py-3 text-sm font-semibold hover:text-white shadow-sm">{{
                 step.name
               }}</span>
             </span>
@@ -64,7 +64,7 @@ import { CheckIcon } from "@heroicons/vue/20/solid";
 const steps = [
   {
     number: 1,
-    name: "Follow CashFinance on Twitter",
+    name: "Follow on Twitter",
     description: "Vitae sed mi luctus laoreet.",
     href: "#",
     status: "complete",
@@ -78,14 +78,14 @@ const steps = [
   },
   {
     number: 3,
-    name: "Join CashFinance Channel",
+    name: "Join Telegram Channel",
     description: "Penatibus eu quis ante.",
     href: "#",
     status: "upcoming",
   },
   {
     number: 4,
-    name: "Follow CashFinance on Instagram",
+    name: "Follow on Instagram",
     description: "Faucibus nec enim leo et.",
     href: "#",
     status: "upcoming",

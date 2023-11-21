@@ -1,8 +1,6 @@
 <template>
   <div>
-    <div
-      class="airDrop flex min-w-full items-center overflow-auto justify-between gap-8"
-    >
+    <div class="airDrop flex min-w-full items-center overflow-auto justify-between gap-8">
       <div class="dropLogo shrink-0">
         <img :src="dropLogo" alt="" />
       </div>
@@ -101,7 +99,7 @@
             <h1>Participants: 213/2000</h1>
           </div>
           <div class="boldH">
-            <h1>Estimated value $20</h1>
+            <h1>Airdrop Reward: $20</h1>
           </div>
         </div>
       </div>
@@ -153,7 +151,10 @@
           </div>
         </div>
         <div class="w-full flex">
-          <button @click="setAirdrop" class="btn ml-auto">Claim Now</button>
+          <!-- <button @click="setAirdrop" class="btn ml-auto">Claim Now</button> -->
+          <router-link to="/airdrop" class="btn ml-auto">
+            <button>Claim Now</button>
+          </router-link>
         </div>
       </div>
     </div>

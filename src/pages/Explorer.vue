@@ -23,7 +23,7 @@
     <div class="py-24 px-4">
       <div class="bg_gradient rounded-2xl py-5 grid grid-cols-2 gap-6 xl:grid-cols-4 max-w-7xl mx-auto pl-8 sm:pl-24">
         <div class="text-white">
-          <h1 class="text-md md:text-xl font-semibold">Total Transaction: 127</h1>
+          <h1 class="text-md md:text-xl font-semibold">Reward Transaction: 127</h1>
           <!-- <p class="text-lg md:text-2xl font-medium">172</p> -->
         </div>
         <div class="text-white">

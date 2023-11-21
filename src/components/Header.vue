@@ -51,16 +51,16 @@
             <!-- Separator -->
             <div class="hidden lg:block lg:h-6 lg:w-px lg:bg-gray-900/10" aria-hidden="true" />
 
-            <!-- <button
+            <button
               class="sm:px-6 px-4 text-xs sm:text-sm py-2 font-semibold bg-transparent border border-white text-white rounded-full">
               Sign In
-            </button> -->
+            </button>
 
-            <button @click="toggleDropdown" class="-m-1.5 flex items-center p-1.5">
+            <!-- <button @click="toggleDropdown" class="-m-1.5 flex items-center p-1.5">
               <img class="h-8 w-8 rounded-full bg-gray-50"
                 src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                 alt="" />
-            </button>
+            </button> -->
 
             <transition name="fade">
               <div v-if="isDropdownOpen" class="absolute z-10 top-full right-0 mt-2 bg-white rounded-md shadow-lg" style="top: 3rem; right: 10;">
