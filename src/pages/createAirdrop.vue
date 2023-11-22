@@ -360,7 +360,7 @@
           <!-- <div class="col-span-1 md:col-span-2"> -->
             <div class="">
               <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
-                Reserve Total Allocated Tokens <span style="color: red">*</span>
+                Reserve Total Tokens <span style="color: red">*</span>
                 <svg
                   v-tooltip="'Make sure to reserve total tokens you have set for the airdrop. Any remaining tokens after the airdrop ends will be returned to your wallet'"
                   xmlns="http://www.w3.org/2000/svg"
@@ -394,7 +394,9 @@
               </div>
             </div>
           <!-- </div> -->
-          <div class="flex flex-col sm:flex-row items-center gap-5 my-6 col-span-1 md:col-span-2">
+
+          <!-- Social Media Links -->
+          <!-- <div class="flex flex-col sm:flex-row items-center gap-5 my-6 col-span-1 md:col-span-2">
             <button class="flex items-center justify-center gap-2 border bg-gray-100 rounded-full px-3 py-1.5 w-full sm:w-auto">
               <span>
                 <svg
@@ -450,8 +452,8 @@
                 Connect Discord
               </span>
             </button>
-          </div>
-          <div class="col-span-1 md:col-span-2 w-[100%]">
+          </div> -->
+          <div class="col-span-1 md:col-span-2 w-[100%] mt-12">
             <div class="">
               <h1 class="text-xl text-center font-bold mt-2 col-span-1 md:col-span-2" data-v-8b4eb8e5="">
                 Airdrop Requirements
@@ -651,6 +653,86 @@
               </div>
             </div>
           </div>
+          <div class="col-span-1 md:col-span-2 w-[100%] mt-20">
+            <div class="">
+              <h1 class="text-xl text-center font-bold mt-2 col-span-1 md:col-span-2" data-v-8b4eb8e5="">
+                Airdrop Participants Eligibility
+              </h1>
+            </div>
+          </div>
+          
+          <div class="">
+            <div class="">
+              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+                Profile Age
+                <svg
+                  v-tooltip="'Enter your Twitter profile link here for participants to follow'"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                  />
+                </svg>
+              </h1>
+              <div class="flex items-center">
+                <input id="ProfileAgeCheckbox" type="checkbox" class="h-4 w-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
+                  style="margin: revert;"
+                  v-model="ProfileAgeisChecked" />
+                <input
+                  class="border border-gray-300 rounded-md py-1.5 px-2 w-full"
+                  type="text"
+                  :disabled="!ProfileAgeisChecked"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="">
+              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+                Location
+                <svg
+                  v-tooltip="'Choose countries where people can join the airdrop'"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                  />
+                </svg>
+              </h1>
+              <div class="relative">
+                <div class="flex items-center border border-gray-300 rounded-md px-2 py-1.5 w-full cursor-pointer"
+                  @click="toggleDropdown"
+                >
+                  <span v-if="selectedLocations.length === 0">Please select...</span>
+                  <span v-else>{{ selectedLocations.join(', ') }}</span>
+                </div>
+                <select
+                  v-show="dropdownOpen"
+                  v-model="selectedLocations"
+                  multiple
+                  class="absolute top-full z-20 left-0 w-full border border-gray-300 rounded-md mt-1 py-1.5 px-2"
+                  @blur="dropdownOpen = false"
+                >
+                  <option disabled value="">Please select...</option>
+                  <option v-for="option in locationOptions" :key="option.value" :value="option.value">{{ option.label }}</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="mt-8 flex items-center gap-x-6 w-full" data-v-933e9cdf="" data-v-0a3af7de="" data-v-8b4eb8e5="">
@@ -702,6 +784,22 @@ const DiscordLinkisChecked = ref(false);
 const isChecked = ref(false);
 const YoutubevideoLinkisChecked = ref(false);
 const YoutubechannelisChecked = ref(false);
+const ProfileAgeisChecked = ref(false);
+
+const selectedLocations = ref([]);
+const dropdownOpen = ref(false);
+
+const locationOptions = [
+  { label: 'All', value: 'All' },
+  { label: 'USA', value: 'USA' },
+  { label: 'UK', value: 'UK' },
+  { label: 'Australia', value: 'Australia' },
+  { label: 'Germany', value: 'Germany' },
+];
+
+const toggleDropdown = () => {
+  dropdownOpen.value = !dropdownOpen.value;
+};
 
 const description = ref('');
 const characterCount = ref(0);
