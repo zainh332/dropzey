@@ -456,7 +456,7 @@
           <div class="col-span-1 md:col-span-2 w-[100%] mt-12">
             <div class="">
               <h1 class="text-xl text-center font-bold mt-2 col-span-1 md:col-span-2" data-v-8b4eb8e5="">
-                Airdrop Requirements
+                Airdrop Participating Requirements
               </h1>
             </div>
           </div>
@@ -656,7 +656,7 @@
           <div class="col-span-1 md:col-span-2 w-[100%] mt-20">
             <div class="">
               <h1 class="text-xl text-center font-bold mt-2 col-span-1 md:col-span-2" data-v-8b4eb8e5="">
-                Airdrop Participants Eligibility
+                Airdrop Participating Eligibilities
               </h1>
             </div>
           </div>
@@ -664,9 +664,9 @@
           <div class="">
             <div class="">
               <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
-                Profile Age
+                Gender
                 <svg
-                  v-tooltip="'Enter your Twitter profile link here for participants to follow'"
+                  v-tooltip="'Select Gender'"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -681,15 +681,12 @@
                   />
                 </svg>
               </h1>
-              <div class="flex items-center">
-                <input id="ProfileAgeCheckbox" type="checkbox" class="h-4 w-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
-                  style="margin: revert;"
-                  v-model="ProfileAgeisChecked" />
-                <input
-                  class="border border-gray-300 rounded-md py-1.5 px-2 w-full"
-                  type="text"
-                  :disabled="!ProfileAgeisChecked"
-                />
+              <div class="relative">
+                <select class="flex items-center border border-gray-300 rounded-md px-2 py-1.5 w-full cursor-pointer">
+                  <option value="M">Male</option>
+                  <option value="F">Female</option>
+                  <option value="B">Both</option>
+                </select>
               </div>
             </div>
           </div>
@@ -714,21 +711,10 @@
                 </svg>
               </h1>
               <div class="relative">
-                <div class="flex items-center border border-gray-300 rounded-md px-2 py-1.5 w-full cursor-pointer"
-                  @click="toggleDropdown"
-                >
-                  <span v-if="selectedLocations.length === 0">Please select...</span>
-                  <span v-else>{{ selectedLocations.join(', ') }}</span>
-                </div>
-                <select
-                  v-show="dropdownOpen"
-                  v-model="selectedLocations"
-                  multiple
-                  class="absolute top-full z-20 left-0 w-full border border-gray-300 rounded-md mt-1 py-1.5 px-2"
-                  @blur="dropdownOpen = false"
-                >
-                  <option disabled value="">Please select...</option>
-                  <option v-for="option in locationOptions" :key="option.value" :value="option.value">{{ option.label }}</option>
+                <select class="flex items-center border border-gray-300 rounded-md px-2 py-1.5 w-full cursor-pointer">
+                  <option value="CA">Canada</option>
+                  <option value="UK">United Kingdom</option>
+                  <option value="US">USA</option>
                 </select>
               </div>
             </div>
@@ -786,21 +772,6 @@ const YoutubevideoLinkisChecked = ref(false);
 const YoutubechannelisChecked = ref(false);
 const ProfileAgeisChecked = ref(false);
 
-const selectedLocations = ref([]);
-const dropdownOpen = ref(false);
-
-const locationOptions = [
-  { label: 'All', value: 'All' },
-  { label: 'USA', value: 'USA' },
-  { label: 'UK', value: 'UK' },
-  { label: 'Australia', value: 'Australia' },
-  { label: 'Germany', value: 'Germany' },
-];
-
-const toggleDropdown = () => {
-  dropdownOpen.value = !dropdownOpen.value;
-};
-
 const description = ref('');
 const characterCount = ref(0);
 
@@ -823,4 +794,3 @@ function updateCharacterCount() {
   line-height: 50px;
 }
 </style>
-``

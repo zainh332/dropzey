@@ -302,42 +302,9 @@
                 <div>
                   <div class="mt-3 text-center sm:mt-5">
                     <h3 class="properHeading">
-                      Follow and Subscribe to Claim your Airdrop
+                      Claim your Airdrop
                     </h3>
                   </div>
-                </div>
-                <div class="flex mt-8 gap-4 items-center justify-center flex-col md:flex-row">
-                  <button class="successBtnClaim">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M13.808 10.469L20.88 2h-1.676l-6.142 7.353L8.158 2H2.5l7.418 11.12L2.5 22h1.676l6.486-7.765L15.842 22H21.5l-7.693-11.531Zm-2.296 2.748l-.752-1.107L4.78 3.3h2.575l4.826 7.11l.751 1.107l6.273 9.242h-2.574l-5.12-7.541Z"
-                      />
-                    </svg>
-                    Follow Dropzey
-                  </button>
-                  <button class="modalBtn">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="33"
-                      height="25"
-                      viewBox="0 0 33 25"
-                      fill="none"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M13.6814 16.5337V6.91342C16.8689 8.52045 19.3377 10.0729 22.2574 11.7466C19.8492 13.1775 16.8689 14.783 13.6814 16.5337ZM31.4455 2.12883C30.8957 1.35267 29.9585 0.748494 28.9608 0.548471C26.0283 -0.0481857 7.73348 -0.0498829 4.80255 0.548471C4.00248 0.709168 3.29004 1.0976 2.67803 1.70109C0.0993224 4.26549 0.907368 18.0175 1.52894 20.2452C1.79031 21.2094 2.12821 21.9048 2.55374 22.3612C3.102 22.9647 3.85265 23.3803 4.71488 23.5666C7.12943 24.1017 19.5688 24.4009 28.9098 23.647C29.7705 23.4863 30.5323 23.0573 31.1331 22.4282C33.5174 19.8741 33.3548 5.34971 31.4455 2.12883Z"
-                        fill="#DD4B39"
-                      />
-                    </svg>
-                    <span> Subscribe Dropzey</span>
-                  </button>
                 </div>
 
                 <div class="mt-8 flex items-center justify-center gap-8">

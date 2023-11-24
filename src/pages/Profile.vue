@@ -17,7 +17,7 @@
           <a class="text-sky-500 font-medium" href="">Learn more</a>
         </p> -->
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 py-6">
-          <!-- <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6">
             <h1 class="text-base font-medium">Profile Picture</h1>
             <p class="text-sm">
               A profile picture helps personalize your account
@@ -27,7 +27,7 @@
             class="w-12 sm:w-24 h-12 sm:h-24 ml-auto object-cover rounded-full"
             src="https://plus.unsplash.com/premium_photo-1679750867619-6f6e57fc8762?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"
             alt=""
-          /> -->
+          />
         </div>
         <div class="">
           <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6 border-t py-4">
@@ -54,6 +54,50 @@
           </div>
           <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6 border-t py-4">
             <h1 class="text-base flex items-center gap-2 font-medium mb-2 mt-2 w-[20%]">
+              Email
+              <svg
+                  v-tooltip="'Enter your email (e.g. abc@gmail.com)'"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                  />
+                </svg>
+            </h1>
+            <input class="border border-gray-300 rounded-md py-1.5 px-2 w-[50%]" type="email" />
+            <!-- <p class="text-sm">Zain Haider</p> -->
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6 border-t py-4">
+            <h1 class="text-base flex items-center gap-2 font-medium mb-2 mt-2 w-[20%]">
+              Password
+              <svg
+                  v-tooltip="'Enter your password (Should contain special characters like !@#$ and numbers)'"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                  />
+                </svg>
+            </h1>
+            <input class="border border-gray-300 rounded-md py-1.5 px-2 w-[50%]" type="password" />
+            <!-- <p class="text-sm">Zain Haider</p> -->
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6 border-t py-4">
+            <h1 class="text-base flex items-center gap-2 font-medium mb-2 mt-2 w-[20%]">
               Date of Birth
               <svg
                   v-tooltip="'Select your Date of Birth (e.g. date-month-year)'"
@@ -73,6 +117,30 @@
             </h1>
             <!-- <p class="text-sm">December 7, 1991</p> -->
             <input class="border border-gray-300 rounded-md py-1.5 px-2 w-[50%]" type="date" />
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6 border-t py-4">
+            <h1 class="text-base flex items-center gap-2 font-medium mb-2 mt-2 w-[20%]">
+              Gender
+              <svg
+                  v-tooltip="'Select your gender'"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                  />
+              </svg>
+            </h1>
+            <select class="border border-gray-300 rounded-md py-1.5 px-2 w-[50%]">
+              <option value="US">Male</option>
+              <option value="CA">Female</option>
+            </select>
           </div>
           <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6 border-t py-4">
             <h1 class="text-base flex items-center gap-2 font-medium mb-2 mt-2 w-[20%]">
@@ -98,7 +166,6 @@
               <option value="CA">Canada</option>
               <option value="UK">United Kingdom</option>
             </select>
-            <!-- <p class="text-sm">Pakistan</p> -->
           </div>
           <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6 border-t border-b py-4">
             <h1 class="text-base flex items-center gap-2 font-medium mb-2 mt-2 w-[20%]">
@@ -137,6 +204,58 @@
         <div class="mt-12">
           <div>
             <div class="hidden sm:block">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 py-6">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6">
+                  <h1 class="text-base font-medium">Social Media Account</h1>
+                  <svg
+                        v-tooltip="'Connect your social media accounts'"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                        />
+                    </svg>
+                </div>
+                  <button class="flex items-center justify-center gap-2 border bg-gray-100 bg_hover_gradient hover:text-white shadow-sm rounded-full px-10 py-1.5 w-full sm:w-auto">
+                    <span class="text-s text-gray-100 font-medium">
+                      Twitter
+                    </span>
+                  </button>
+                  <button class="flex items-center justify-center gap-2 border bg-gray-100 bg_hover_gradient hover:text-white shadow-sm rounded-full px-10 py-1.5 w-full sm:w-auto">
+                    <span class="text-s text-gray-100 font-medium">
+                     Discord
+                    </span>
+                  </button>
+                  <button class="flex items-center justify-center gap-2 border bg-gray-100 bg_hover_gradient hover:text-white shadow-sm rounded-full px-10 py-1.5 w-full sm:w-auto">
+                    <span class="text-s text-gray-100 font-medium">
+                      Telegram
+                    </span>
+                  </button>
+                  <button class="flex items-center justify-center gap-2 border bg-gray-100 bg_hover_gradient hover:text-white shadow-sm rounded-full px-10 py-1.5 w-full sm:w-auto">
+                    <span class="text-s text-gray-100 font-medium">
+                      Youtube
+                    </span>
+                  </button>
+
+                <!-- <img
+                  class="w-12 sm:w-24 h-12 sm:h-24 ml-auto object-cover rounded-full"
+                  src="https://plus.unsplash.com/premium_photo-1679750867619-6f6e57fc8762?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"
+                  alt=""
+                /> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12">
+          <div>
+            <div class="hidden sm:block">
               <div class=" ">
                 <nav class="-mb-px flex space-x-8" aria-label="Tabs">
                   <span v-for="(tab, index) in tabs" :key="tab.name" @click="setTab(index)" :class="[
@@ -150,6 +269,8 @@
             </div>
           </div>
         </div>
+
+
         <div v-if="currentTab === 0" class="flex flex-col sm:flex-row items-center gap-6 py-12">
           <div class="border rounded-xl py-8 w-full px-4">
             <h1
@@ -167,11 +288,6 @@
           </div>
         </div>
         <div v-else-if="currentTab === 1" class="flex flex-col gap-8 py-12">
-          <!-- <MinAirdrop />
-          <MinAirdrop />
-          <MinAirdrop />
-          <MinAirdrop />
-          <MinAirdrop /> -->
           <table class="min-w-full divide-y divide-gray-200 border border-gray-300">
             <thead>
               <tr>
@@ -196,12 +312,7 @@
                 <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
                   Total Participants
                 </th>
-                <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
-                  Aidrop Start Date
-                </th>
-                <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
-                  Aidrop End Date
-                </th>
+                
                 <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
                   Status
                 </th>
@@ -217,8 +328,6 @@
                 <td class="px-2 py-4 whitespace-nowrap">30,000</td>
                 <td class="px-2 py-4 whitespace-nowrap">10</td>
                 <td class="px-2 py-4 whitespace-nowrap">500</td>
-                <td class="px-2 py-4 whitespace-nowrap">01/01/2020</td>
-                <td class="px-2 py-4 whitespace-nowrap">02/01/2020</td>
                 <td class="px-2 py-4 whitespace-nowrap">Scheduled</td>
               </tr>
               <tr>
@@ -229,19 +338,17 @@
                 <td class="px-2 py-4 whitespace-nowrap">30,000</td>
                 <td class="px-2 py-4 whitespace-nowrap">10</td>
                 <td class="px-2 py-4 whitespace-nowrap">500</td>
-                <td class="px-2 py-4 whitespace-nowrap">01/01/2020</td>
-                <td class="px-2 py-4 whitespace-nowrap">02/01/2020</td>
                 <td class="px-2 py-4 whitespace-nowrap">Ended</td>
               </tr>
               <!-- Add more rows with project details -->
             </tbody>
           </table>
         </div>
-        <div class="mt-4 flex items-center gap-x-6 w-full" data-v-933e9cdf="" data-v-0a3af7de="">
+        <!-- <div class="mt-4 flex items-center gap-x-6 w-full" data-v-933e9cdf="" data-v-0a3af7de="">
           <a href="#"
             class="mx-auto text-center rounded-full text-gray-600 bg-gray-100 bg_gradient px-14 py-3 text-sm font-semibold text-white shadow-sm"
             data-v-933e9cdf="" data-v-0a3af7de="">View Activity</a>
-        </div>
+        </div> -->
       </div>
       <!-- <section>
         <div class="py-32 px-4">

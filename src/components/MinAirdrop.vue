@@ -140,19 +140,15 @@
               leave-from="opacity-100 translate-y-0 sm:scale-100"
               leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <DialogPanel
-                class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-64 sm:w-full sm:max-w-3xl sm:p-6"
-              >
+              <DialogPanel class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-64 sm:w-full sm:max-w-3xl sm:p-6">
                 <div>
                   <div class="mt-3 text-center sm:mt-5">
                     <h3 class="properHeading">
-                      Follow and Subscribe to Claim your Airdrop
+                      Claim your Airdrop
                     </h3>
                   </div>
                 </div>
-                <div
-                  class="flex mt-8 gap-4 items-center justify-center flex-col md:flex-row"
-                >
+                <!-- <div class="flex mt-8 gap-4 items-center justify-center flex-col md:flex-row">
                   <button class="modalBtn">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -184,7 +180,7 @@
                     </svg>
                     <span> Subscribe Dropzey</span>
                   </button>
-                </div>
+                </div> -->
 
                 <div class="mt-8 flex items-center justify-center gap-8">
                   <div class="flex items-center flex-col gap-0">

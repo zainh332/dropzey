@@ -159,7 +159,7 @@
       </div>
     </div>
 
-    <!--Modal-->
+    <!--Claim Airdrop Modal-->
     <TransitionRoot as="template" :show="claim_airdrop_modal">
       <Dialog as="div" class="relative z-10" @close="claim_airdrop_modal = false">
         <TransitionChild
@@ -190,11 +190,12 @@
                 <div>
                   <div class="mt-3 text-center sm:mt-5">
                     <h3 class="properHeading">
-                      Follow and Subscribe to Claim your Airdrop
+                      <!-- Follow and Subscribe to Claim your Airdrop -->
+                      Claim your Airdrop
                     </h3>
                   </div>
                 </div>
-                <div class="flex mt-8 gap-4 items-center justify-center flex-col md:flex-row">
+                <!-- <div class="flex mt-8 gap-4 items-center justify-center flex-col md:flex-row">
                   <button class="successBtnClaim">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -226,7 +227,7 @@
                     </svg>
                     <span> Subscribe Dropzey</span>
                   </button>
-                </div>
+                </div> -->
 
                 <div class="mt-8 flex items-center justify-center gap-8">
                   <div class="flex items-center flex-col gap-0">
