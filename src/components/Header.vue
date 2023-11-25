@@ -118,6 +118,7 @@ const navigation = [
   { name: "Airdrops", href: "/airdrops", current: true },
   { name: "Explorer", href: "/explorer", current: false },
   { name: "About Us", href: "/about-us", current: false },
+  { name: "Profile Page", href: "/profile", current: false },
 ];
 
 const profileNavigation = [
