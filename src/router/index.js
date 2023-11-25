@@ -91,6 +91,18 @@ const router = createRouter({
       component: Components,
     },
   ],
+
+  // Scroll to the top when navigating to a new route
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        
+      };
+    } else {
+      return { top: 0 };
+    }
+  },
 });
 
 // Set the page title dynamically when the route changes
@@ -98,5 +110,7 @@ router.beforeEach((to, from, next) => {
   document.title = to.meta.title + "  | Dropzey";
   next();
 });
+
+
 
 export default router;

@@ -5,12 +5,11 @@
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-8">
           <img class="w-auto" :src="logo" alt="Dropzey" />
-          <p class="text-sm text-white">
+          <p class="text-sm text-white" style=" margin-top: 12px;">
             Empowering your airdrop experience
           </p>
         </div>
-        <div class="mt-16 md:grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0" style="
-    padding-left: 300px">
+        <div class="mt-16 md:grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0" style=" padding-left: 100px">
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
               <h3 class="text-xl font-semibold leading-6 text-white">

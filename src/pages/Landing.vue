@@ -41,7 +41,7 @@
               What is Airdrop
             </h1>
             <p class="mt-6 text-base leading-6 text-gray-400">
-              A crypto airdrop is a method used to giveaway new coins or tokens to those who complete specific tasks. It's like a free giveaway of digital coins or tokens to certain individuals as a reward for their participation.
+              A crypto airdrop is like receiving free digital coins or tokens online. It's a promotional method where new cryptocurrency projects give away these digital assets to people for free. To get these free coins, participants complete simple online tasks like following the project on social media or signing up for newsletters. It's a way for new projects to gain attention and for people to get involved without buying the coins directly. It's similar to winning freebies online after doing easy tasks.
             </p>
           </div>
         </div>
@@ -126,11 +126,25 @@
           Explore how participants engage in Dropzey's airdrop process effortlessly to earn rewards.
         </p>
       </div>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto my-16">
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 max-w-7xl mx-auto my-16">
         <div class="bg-card text-center">
           <div class="relative w-fit mx-auto">
             <div class="w-20 h-20 bg_gradient rounded-full p-2 flex items-center justify-center">
               <h1 class="text-4xl font-semibold text-white">01</h1>
+            </div>
+            <div class="bg-yellow-300 text-xs text-gray-800 w-fit rounded-full px-4 font-medium absolute -top-2 left-3">
+              Step
+            </div>
+          </div>
+          <p class="text-gray-900 font-bold text-lg mt-4">Connect Social Media Accounts</p>
+          <p class="text-gray-500 text-md mt-2">
+            Link your social media profiles to get started.
+          </p>
+        </div>
+        <div class="bg-card text-center">
+          <div class="relative w-fit mx-auto">
+            <div class="w-20 h-20 bg_gradient rounded-full p-2 flex items-center justify-center">
+              <h1 class="text-4xl font-semibold text-white">02</h1>
             </div>
             <div class="bg-yellow-300 text-xs text-gray-800 w-fit rounded-full px-4 font-medium absolute -top-2 left-3">
               Step
@@ -145,7 +159,7 @@
         <div class="bg-card text-center">
           <div class="relative w-fit mx-auto">
             <div class="w-20 h-20 bg_gradient rounded-full p-2 flex items-center justify-center">
-              <h1 class="text-4xl font-semibold text-white">02</h1>
+              <h1 class="text-4xl font-semibold text-white">03</h1>
             </div>
             <div class="bg-yellow-300 text-xs text-gray-800 w-fit rounded-full px-4 font-medium absolute -top-2 left-3">
               Step
@@ -159,7 +173,7 @@
         <div class="bg-card text-center">
           <div class="relative w-fit mx-auto">
             <div class="w-20 h-20 bg_gradient rounded-full flex items-center justify-center">
-              <h1 class="text-4xl font-semibold text-white">03</h1>
+              <h1 class="text-4xl font-semibold text-white">04</h1>
             </div>
             <div class="bg-yellow-300 text-xs text-gray-800 w-fit rounded-full px-4 font-medium absolute -top-2 left-3">
               Step
