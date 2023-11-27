@@ -683,9 +683,9 @@
               </h1>
               <div class="relative">
                 <select class="flex items-center border border-gray-300 rounded-md px-2 py-1.5 w-full cursor-pointer">
+                  <option value="B">Both</option>
                   <option value="M">Male</option>
                   <option value="F">Female</option>
-                  <option value="B">Both</option>
                 </select>
               </div>
             </div>
@@ -712,6 +712,7 @@
               </h1>
               <div class="relative">
                 <select class="flex items-center border border-gray-300 rounded-md px-2 py-1.5 w-full cursor-pointer">
+                  <option value="All">All</option>
                   <option value="CA">Canada</option>
                   <option value="UK">United Kingdom</option>
                   <option value="US">USA</option>

@@ -120,6 +120,28 @@
           </div>
           <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6 border-t py-4">
             <h1 class="text-base flex items-center gap-2 font-medium mb-2 mt-2 w-[20%]">
+              Phone Number
+              <svg
+                  v-tooltip="'Enter your Phone Number (e.g. +90-000-000-000)'"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                  />
+                </svg>
+            </h1>
+            <!-- <p class="text-sm">December 7, 1991</p> -->
+            <input class="border border-gray-300 rounded-md py-1.5 px-2 w-[50%]" type="phone" />
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6 border-t py-4">
+            <h1 class="text-base flex items-center gap-2 font-medium mb-2 mt-2 w-[20%]">
               Gender
               <svg
                   v-tooltip="'Select your gender'"
@@ -188,16 +210,16 @@
             </h1>
             
             <!-- When wallet is not connected -->
-            <!-- <button class="flex items-center justify-center gap-2 border bg-gray-100 rounded-full px-10 py-1.5 w-full sm:w-auto">
+            <button class="flex items-center justify-center gap-2 border bg-gray-100 rounded-full px-10 py-1.5 w-full sm:w-auto">
               <span class="text-s text-gray-500 font-medium">
                 Connect Wallet
               </span>
-            </button> -->
+            </button>
 
             <!-- When wallet is connected -->
-            <p class="text-sm overflow-scroll example">
+            <!-- <p class="text-sm overflow-scroll example">
               GANXQETJKJKPOIYRHNMALK759342HAKNAQWERTYUIOPLK
-            </p>
+            </p> -->
           </div>
         </div>
 
