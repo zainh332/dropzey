@@ -11,7 +11,7 @@
           </h1> -->
           <div class="">
             <h1 class="text-base flex items-center gap-2 font-medium mb-2 mt-2" data-v-8b4eb8e5="">
-             Logo <span style="color: red">*</span>
+             Project Logo <span style="color: red">*</span>
               <svg
                 v-tooltip="'Upload the project logo'"
                 xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@
           </div>
           <div class="col-span-1 md:col-span-2">
             <h1 class="text-base flex items-center gap-2 font-medium mb-2 mt-2" data-v-8b4eb8e5="">
-              Cover <span style="color: red">*</span>
+              Project Cover Image <span style="color: red">*</span>
               <svg
                 v-tooltip="'Upload the project cover image'"
                 xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +108,7 @@
           <div class="col-span-1 md:col-span-2 w-[50%]">
             <div class="">
               <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
-                Name <span style="color: red">*</span>
+                Project Name <span style="color: red">*</span>
                 <svg
                   v-tooltip="'Enter the name of project, for example: Dropzey'"
                   xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +136,7 @@
           <div class="col-span-1 md:col-span-2">
             <div class="">
               <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
-                Description <span style="color: red">*</span>
+                Project Description <span style="color: red">*</span>
                 <svg
                 v-tooltip="'Provide a brief overview of your project. For example, Dropzey is an innovative web application built on the Stellar blockchain and seamlessly integrated with Soroban smart contract technology. \n\n Dropzey is offering a specific number of tokens to a limited participant count. To take part, please follow to the outlined requirements:'"
                   xmlns="http://www.w3.org/2000/svg"
@@ -229,7 +229,7 @@
           </div>
           <div class="">
               <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
-                Intro Video Link
+                Project Intro Video Link (Optional)
                 <svg
                   v-tooltip="'Add an intro video link (e.g., https://www.youtube.com/watch?v=dN4TKnYr5nQ)'"
                   xmlns="http://www.w3.org/2000/svg"
