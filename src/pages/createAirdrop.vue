@@ -456,6 +456,207 @@
           <div class="col-span-1 md:col-span-2 w-[100%] mt-12">
             <div class="">
               <h1 class="text-xl text-center font-bold mt-2 col-span-1 md:col-span-2" data-v-8b4eb8e5="">
+                Project Social Media Links
+              </h1>
+            </div>
+          </div>
+          
+          <div class="">
+            <div class="">
+              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+                Twitter
+                <svg
+                  v-tooltip="'Enter Project Twitter Profie link'"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                  />
+                </svg>
+              </h1>
+              <div class="flex items-center">
+                <input id="TwitterFollowLinkCheckbox" type="checkbox" class="h-4 w-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
+                  style="margin: revert;"
+                  v-model="projectTwitterLinkisChecked" />
+                <input
+                  class="border border-gray-300 rounded-md py-1.5 px-2 w-full"
+                  type="text"
+                  :disabled="!projectTwitterLinkisChecked"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="">
+              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+                Telegram
+                <svg
+                  v-tooltip="'Enter Project Telegram Channel Link'"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                  />
+                </svg>
+              </h1>
+              <div class="flex items-center">
+                <input id="TelegramChannelLinkCheckbox" type="checkbox" class="h-4 w-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
+                  style="margin: revert;"
+                  v-model="projectTelegramChannelLinkisChecked" />
+                <input
+                  class="border border-gray-300 rounded-md py-1.5 px-2 w-full"
+                  type="text"
+                  :disabled="!projectTelegramChannelLinkisChecked"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="">
+              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+                Discord
+                <svg
+                  v-tooltip="'Enter Project Official Discord Channel Link.'"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                  />
+                </svg>
+              </h1>
+              <div class="flex items-center">
+                <input id="DiscordLinkCheckbox" type="checkbox" class="h-4 w-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
+                  style="margin: revert;"
+                  v-model="projectDiscordLinkisChecked" />
+                <input
+                  class="border border-gray-300 rounded-md py-1.5 px-2 w-full"
+                  type="text"
+                  :disabled="!projectDiscordLinkisChecked"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="">
+              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+                Youtube
+                <svg
+                  v-tooltip="'Enter Project Official YouTube Channel Link.'"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                  />
+                </svg>
+              </h1>
+              <div class="flex items-center">
+                <input id="Youtubechannelcheckbox" type="checkbox" class="h-4 w-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
+                  style="margin: revert;"
+                  v-model="projectYoutubeLinkisChecked" />
+                <input
+                  class="border border-gray-300 rounded-md py-1.5 px-2 w-full"
+                  type="text"
+                  :disabled="!projectYoutubeLinkisChecked"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="">
+              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+                FaceBook
+                <svg
+                  v-tooltip="'Enter Project Official FaceBook Page Link.'"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                  />
+                </svg>
+              </h1>
+              <div class="flex items-center">
+                <input id="Youtubechannelcheckbox" type="checkbox" class="h-4 w-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
+                  style="margin: revert;"
+                  v-model="projectfacebookisChecked" />
+                <input
+                  class="border border-gray-300 rounded-md py-1.5 px-2 w-full"
+                  type="text"
+                  :disabled="!projectfacebookisChecked"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="">
+              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+                Instagram
+                <svg
+                  v-tooltip="'Enter Project Official Instagram Profile Link.'"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                  />
+                </svg>
+              </h1>
+              <div class="flex items-center">
+                <input id="Youtubechannelcheckbox" type="checkbox" class="h-4 w-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
+                  style="margin: revert;"
+                  v-model="projectinstagramlisChecked" />
+                <input
+                  class="border border-gray-300 rounded-md py-1.5 px-2 w-full"
+                  type="text"
+                  :disabled="!projectinstagramlisChecked"
+                />
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-span-1 md:col-span-2 w-[100%] mt-12">
+            <div class="">
+              <h1 class="text-xl text-center font-bold mt-2 col-span-1 md:col-span-2" data-v-8b4eb8e5="">
                 Airdrop Participating Requirements
               </h1>
             </div>
@@ -772,6 +973,14 @@ const isChecked = ref(false);
 const YoutubevideoLinkisChecked = ref(false);
 const YoutubechannelisChecked = ref(false);
 const ProfileAgeisChecked = ref(false);
+
+
+const projectTwitterLinkisChecked = ref(false);
+const projectTelegramChannelLinkisChecked = ref(false);
+const projectDiscordLinkisChecked = ref(false);
+const projectYoutubeLinkisChecked = ref(false);
+const projectfacebookisChecked = ref(false);
+const projectinstagramlisChecked = ref(false);
 
 const description = ref('');
 const characterCount = ref(0);
