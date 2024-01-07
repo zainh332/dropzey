@@ -1,16 +1,16 @@
 <template>
   <div class="">
-    <div class="py-16 max-w-7xl mx-auto">
-      <h1 class="max-w-2xl mx-auto text-center text_gradient leading-loose bg-black text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+    <div class="py-16 mx-auto max-w-7xl">
+      <h1 class="max-w-2xl mx-auto text-3xl font-bold leading-loose tracking-tight text-center text-gray-900 bg-black text_gradient sm:text-5xl">
         Create an Airdrop
       </h1>
-      <div class="shadow-xl rounded-xl px-4 sm:px-12 py-12 mt-12">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <!-- <h1 class="text-xl text-center font-bold mt-2 col-span-1 md:col-span-2" data-v-8b4eb8e5="">
+      <div class="px-4 py-12 mt-12 shadow-xl rounded-xl sm:px-12">
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
+          <!-- <h1 class="col-span-1 mt-2 text-xl font-bold text-center md:col-span-2" data-v-8b4eb8e5="">
             Profile Info
           </h1> -->
           <div class="">
-            <h1 class="text-base flex items-center gap-2 font-medium mb-2 mt-2" data-v-8b4eb8e5="">
+            <h1 class="flex items-center gap-2 mt-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
              Project Logo <span style="color: red">*</span>
               <svg
                 v-tooltip="'Upload the project logo'"
@@ -29,13 +29,13 @@
               </svg>
             </h1>
             <img
-              class="w-28 h-28 rounded-full object-cover"
+              class="object-cover rounded-full w-28 h-28"
               :src="iconImage"
               alt=""
             />
           </div>
           <div class="col-span-1 md:col-span-2">
-            <h1 class="text-base flex items-center gap-2 font-medium mb-2 mt-2" data-v-8b4eb8e5="">
+            <h1 class="flex items-center gap-2 mt-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
               Project Cover Image <span style="color: red">*</span>
               <svg
                 v-tooltip="'Upload the project cover image'"
@@ -53,10 +53,10 @@
                 />
               </svg>
             </h1>
-            <div class="border-2 border-dashed rounded-xl py-6">
+            <div class="py-6 border-2 border-dashed rounded-xl">
               <label
                 for="file-upload"
-                class="file-upload-label flex flex-col items-center cursor-pointer"
+                class="flex flex-col items-center cursor-pointer file-upload-label"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -101,13 +101,13 @@
                   </defs>
                 </svg>
                 <input type="file" id="file-upload" class="hidden" />
-                <span class="text-base mt-2 text-gray-700" >Upload</span>
+                <span class="mt-2 text-base text-gray-700" >Upload</span>
               </label>
             </div>
           </div>
           <div class="col-span-1 md:col-span-2 w-[50%]">
             <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Project Name <span style="color: red">*</span>
                 <svg
                   v-tooltip="'Enter the name of project, for example: Dropzey'"
@@ -135,7 +135,7 @@
           </div>
           <div class="col-span-1 md:col-span-2">
             <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Project Description <span style="color: red">*</span>
                 <svg
                 v-tooltip="'Provide a brief overview of your project. For example, Dropzey is an innovative web application built on the Stellar blockchain and seamlessly integrated with Soroban smart contract technology. \n\n Dropzey is offering a specific number of tokens to a limited participant count. To take part, please follow to the outlined requirements:'"
@@ -166,14 +166,14 @@
                   v-model="description"
                   @input="updateCharacterCount"
                 ></textarea>
-                <div class="absolute bottom-2 right-2 text-sm text-gray-500">{{ characterCount }}/1000 characters</div>
+                <div class="absolute text-sm text-gray-500 bottom-2 right-2">{{ characterCount }}/1000 characters</div>
               </div>
 
             </div>
           </div>
           <!-- <div class="">
             <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Country
                 <svg
                   v-tooltip="'Write the name of Registered '"
@@ -201,7 +201,7 @@
           </div> -->
           <div class="">
             <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Official Website Link <span style="color: red">*</span>
                 <svg
                   v-tooltip="'Add an official website link (e.g., https://dropzey.com)'"
@@ -228,7 +228,7 @@
             </div>
           </div>
           <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Project Intro Video Link (Optional)
                 <svg
                   v-tooltip="'Add an intro video link (e.g., https://www.youtube.com/watch?v=dN4TKnYr5nQ)'"
@@ -254,7 +254,7 @@
               </div>
           </div>
           <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Total Tokens<span style="color: red">*</span>
                 <svg
                   v-tooltip="'Specify the quantity of total tokens you want to distribute in the airdrop (e.g. 1000000)'"
@@ -280,7 +280,7 @@
               </div>
           </div>
           <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Reward Amount <span style="color: red">*</span>
                 <svg
                   v-tooltip="'Specify the reward amount allocated to each participant in the airdrop (e.g., 10)'"
@@ -306,7 +306,7 @@
               </div>
           </div>
           <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Airdrop Start Date <span style="color: red">*</span>
                 <svg
                   v-tooltip="'Choose the date when the airdrop campaign will begin.'"
@@ -332,7 +332,7 @@
               </div>
           </div>
           <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Airdrop End Date <span style="color: red">*</span>
                 <svg
                   v-tooltip="'Set the date on which the airdrop campaign will end.'"
@@ -358,8 +358,8 @@
               </div>
           </div>
           <!-- <div class="col-span-1 md:col-span-2"> -->
-            <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+            <!-- <div class="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Reserve Total Tokens <span style="color: red">*</span>
                 <svg
                   v-tooltip="'Make sure to reserve total tokens you have set for the airdrop. Any remaining tokens after the airdrop ends will be returned to your wallet'"
@@ -379,24 +379,24 @@
               </h1>
               <div class="">
                 <button class="flex items-center justify-center gap-2 border bg-gray-100 rounded-full px-10 py-1.5 w-full sm:w-auto">
-              <span class="text-s text-gray-500 font-medium">
+              <span class="font-medium text-gray-500 text-s">
                 Reserve Tokens
               </span>
-            </button>
-                <!-- <div class="py-2 px-4 w-full font-medium overflow-scroll example">
-                  <a href="#" class="mx-auto text-center rounded-full text-gray-600 bg-gray-100 bg_gradient px-14 py-3 text-sm font-semibold text-white shadow-sm">
+            </button> -->
+                <!-- <div class="w-full px-4 py-2 overflow-scroll font-medium example">
+                  <a href="#" class="py-3 mx-auto text-sm font-semibold text-center text-white text-gray-600 bg-gray-100 rounded-full shadow-sm bg_gradient px-14">
                     Reserve Tokens</a>
                 </div> -->
       
-                <!-- <div class="border border-gray-300 rounded-md py-2 px-4 w-full font-medium overflow-scroll example">
+                <!-- <div class="w-full px-4 py-2 overflow-scroll font-medium border border-gray-300 rounded-md example">
                   <p>GANXQETJKJKPOIYRHNMALK759342HAKNAQWERTYUIOPLK</p>
                 </div> -->
-              </div>
-            </div>
+              <!-- </div>
+            </div> -->
           <!-- </div> -->
 
           <!-- Social Media Links -->
-          <!-- <div class="flex flex-col sm:flex-row items-center gap-5 my-6 col-span-1 md:col-span-2">
+          <!-- <div class="flex flex-col items-center col-span-1 gap-5 my-6 sm:flex-row md:col-span-2">
             <button class="flex items-center justify-center gap-2 border bg-gray-100 rounded-full px-3 py-1.5 w-full sm:w-auto">
               <span>
                 <svg
@@ -409,7 +409,7 @@
                   />
                 </svg>
               </span>
-              <span class="text-xs text-gray-500 font-medium">
+              <span class="text-xs font-medium text-gray-500">
                 Connect Twitter
               </span>
             </button>
@@ -431,7 +431,7 @@
                   />
                 </svg>
               </span>
-              <span class="text-xs text-gray-500 font-medium">
+              <span class="text-xs font-medium text-gray-500">
                 Connect Youtube
               </span>
             </button>
@@ -448,14 +448,14 @@
                   />
                 </svg>
               </span>
-              <span class="text-xs text-gray-500 font-medium">
+              <span class="text-xs font-medium text-gray-500">
                 Connect Discord
               </span>
             </button>
           </div> -->
           <div class="col-span-1 md:col-span-2 w-[100%] mt-12">
             <div class="">
-              <h1 class="text-xl text-center font-bold mt-2 col-span-1 md:col-span-2" data-v-8b4eb8e5="">
+              <h1 class="col-span-1 mt-2 text-xl font-bold text-center md:col-span-2" data-v-8b4eb8e5="">
                 Project Social Media Links
               </h1>
             </div>
@@ -463,7 +463,7 @@
           
           <div class="">
             <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Twitter
                 <svg
                   v-tooltip="'Enter Project Twitter Profie link'"
@@ -482,7 +482,7 @@
                 </svg>
               </h1>
               <div class="flex items-center">
-                <input id="TwitterFollowLinkCheckbox" type="checkbox" class="h-4 w-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
+                <input id="TwitterFollowLinkCheckbox" type="checkbox" class="w-4 h-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
                   style="margin: revert;"
                   v-model="projectTwitterLinkisChecked" />
                 <input
@@ -495,7 +495,7 @@
           </div>
           <div class="">
             <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Telegram
                 <svg
                   v-tooltip="'Enter Project Telegram Channel Link'"
@@ -514,7 +514,7 @@
                 </svg>
               </h1>
               <div class="flex items-center">
-                <input id="TelegramChannelLinkCheckbox" type="checkbox" class="h-4 w-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
+                <input id="TelegramChannelLinkCheckbox" type="checkbox" class="w-4 h-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
                   style="margin: revert;"
                   v-model="projectTelegramChannelLinkisChecked" />
                 <input
@@ -527,7 +527,7 @@
           </div>
           <div class="">
             <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Discord
                 <svg
                   v-tooltip="'Enter Project Official Discord Channel Link.'"
@@ -546,7 +546,7 @@
                 </svg>
               </h1>
               <div class="flex items-center">
-                <input id="DiscordLinkCheckbox" type="checkbox" class="h-4 w-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
+                <input id="DiscordLinkCheckbox" type="checkbox" class="w-4 h-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
                   style="margin: revert;"
                   v-model="projectDiscordLinkisChecked" />
                 <input
@@ -559,7 +559,7 @@
           </div>
           <div class="">
             <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Youtube
                 <svg
                   v-tooltip="'Enter Project Official YouTube Channel Link.'"
@@ -578,7 +578,7 @@
                 </svg>
               </h1>
               <div class="flex items-center">
-                <input id="Youtubechannelcheckbox" type="checkbox" class="h-4 w-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
+                <input id="Youtubechannelcheckbox" type="checkbox" class="w-4 h-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
                   style="margin: revert;"
                   v-model="projectYoutubeLinkisChecked" />
                 <input
@@ -591,7 +591,7 @@
           </div>
           <div class="">
             <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 FaceBook
                 <svg
                   v-tooltip="'Enter Project Official FaceBook Page Link.'"
@@ -610,7 +610,7 @@
                 </svg>
               </h1>
               <div class="flex items-center">
-                <input id="Youtubechannelcheckbox" type="checkbox" class="h-4 w-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
+                <input id="Youtubechannelcheckbox" type="checkbox" class="w-4 h-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
                   style="margin: revert;"
                   v-model="projectfacebookisChecked" />
                 <input
@@ -623,7 +623,7 @@
           </div>
           <div class="">
             <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Instagram
                 <svg
                   v-tooltip="'Enter Project Official Instagram Profile Link.'"
@@ -642,7 +642,7 @@
                 </svg>
               </h1>
               <div class="flex items-center">
-                <input id="Youtubechannelcheckbox" type="checkbox" class="h-4 w-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
+                <input id="Youtubechannelcheckbox" type="checkbox" class="w-4 h-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
                   style="margin: revert;"
                   v-model="projectinstagramlisChecked" />
                 <input
@@ -656,7 +656,7 @@
           
           <div class="col-span-1 md:col-span-2 w-[100%] mt-12">
             <div class="">
-              <h1 class="text-xl text-center font-bold mt-2 col-span-1 md:col-span-2" data-v-8b4eb8e5="">
+              <h1 class="col-span-1 mt-2 text-xl font-bold text-center md:col-span-2" data-v-8b4eb8e5="">
                 Airdrop Participating Requirements
               </h1>
             </div>
@@ -664,7 +664,7 @@
           
           <div class="">
             <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Twitter Profile Link
                 <svg
                   v-tooltip="'Enter your Twitter profile link here for participants to follow'"
@@ -683,7 +683,7 @@
                 </svg>
               </h1>
               <div class="flex items-center">
-                <input id="TwitterFollowLinkCheckbox" type="checkbox" class="h-4 w-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
+                <input id="TwitterFollowLinkCheckbox" type="checkbox" class="w-4 h-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
                   style="margin: revert;"
                   v-model="TwitterFollowLinkisChecked" />
                 <input
@@ -696,7 +696,7 @@
           </div>
           <div class="">
             <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Twitter Like/Retweet Link
                 <svg
                   v-tooltip="'Enter your Tweet link here for participants to like and retweet'"
@@ -715,7 +715,7 @@
                 </svg>
               </h1>
               <div class="flex items-center">
-                <input id="TwitterRetweetLikeLinkCheckbox" type="checkbox" class="h-4 w-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
+                <input id="TwitterRetweetLikeLinkCheckbox" type="checkbox" class="w-4 h-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
                   style="margin: revert;"
                   v-model="TwitterRetweetLikeLinkisChecked" />
                 <input
@@ -728,7 +728,7 @@
           </div>
           <div class="">
             <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Telegram Channel Link
                 <svg
                   v-tooltip="'Enter your Telegram channel link here so that participants can join your Telegram channel'"
@@ -747,7 +747,7 @@
                 </svg>
               </h1>
               <div class="flex items-center">
-                <input id="TelegramChannelLinkCheckbox" type="checkbox" class="h-4 w-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
+                <input id="TelegramChannelLinkCheckbox" type="checkbox" class="w-4 h-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
                   style="margin: revert;"
                   v-model="TelegramChannelLinkisChecked" />
                 <input
@@ -760,7 +760,7 @@
           </div>
           <div class="">
             <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Discord Channel Link
                 <svg
                   v-tooltip="'Enter your Discord channel link here, allowing participants to join your Discord community.'"
@@ -779,7 +779,7 @@
                 </svg>
               </h1>
               <div class="flex items-center">
-                <input id="DiscordLinkCheckbox" type="checkbox" class="h-4 w-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
+                <input id="DiscordLinkCheckbox" type="checkbox" class="w-4 h-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
                   style="margin: revert;"
                   v-model="DiscordLinkisChecked" />
                 <input
@@ -792,7 +792,7 @@
           </div>
           <div class="">
             <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Youtube Channel Link
                 <svg
                   v-tooltip="'Add your YouTube channel link for participants to subscribe to your channel'"
@@ -811,7 +811,7 @@
                 </svg>
               </h1>
               <div class="flex items-center">
-                <input id="Youtubechannelcheckbox" type="checkbox" class="h-4 w-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
+                <input id="Youtubechannelcheckbox" type="checkbox" class="w-4 h-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
                   style="margin: revert;"
                   v-model="YoutubechannelisChecked" />
                 <input
@@ -824,7 +824,7 @@
           </div>
           <div class="">
             <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Youtube Video Link
                 <svg
                   v-tooltip="'Please add your YouTube video link here so that participants can like your video.'"
@@ -843,7 +843,7 @@
                 </svg>
               </h1>
               <div class="flex items-center">
-                <input id="YoutubevideoLinkCheckbox" type="checkbox" class="h-4 w-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
+                <input id="YoutubevideoLinkCheckbox" type="checkbox" class="w-4 h-4 mr-2 border-gray-300 rounded-sm focus:ring-indigo-500"
                   style="margin: revert;"
                   v-model="YoutubevideoLinkisChecked" />
                 <input
@@ -856,7 +856,7 @@
           </div>
           <div class="col-span-1 md:col-span-2 w-[100%] mt-20">
             <div class="">
-              <h1 class="text-xl text-center font-bold mt-2 col-span-1 md:col-span-2" data-v-8b4eb8e5="">
+              <h1 class="col-span-1 mt-2 text-xl font-bold text-center md:col-span-2" data-v-8b4eb8e5="">
                 Airdrop Participating Eligibilities
               </h1>
             </div>
@@ -864,7 +864,7 @@
           
           <div class="">
             <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Gender
                 <svg
                   v-tooltip="'Select Gender'"
@@ -893,7 +893,7 @@
           </div>
           <div class="">
             <div class="">
-              <h1 class="text-base flex items-center gap-2 font-medium mb-2" data-v-8b4eb8e5="">
+              <h1 class="flex items-center gap-2 mb-2 text-base font-medium" data-v-8b4eb8e5="">
                 Location
                 <svg
                   v-tooltip="'Choose countries where people can join the airdrop'"
@@ -923,9 +923,9 @@
           </div>
         </div>
       </div>
-      <div class="mt-8 flex items-center gap-x-6 w-full" data-v-933e9cdf="" data-v-0a3af7de="" data-v-8b4eb8e5="">
+      <div class="flex items-center w-full mt-8 gap-x-6" data-v-933e9cdf="" data-v-0a3af7de="" data-v-8b4eb8e5="">
         <a href="#"
-          class="mx-auto text-center rounded-full text-gray-600 bg-gray-100 bg_gradient px-14 py-3 text-sm font-semibold text-white shadow-sm"
+          class="py-3 mx-auto text-sm font-semibold text-center text-white text-gray-600 bg-gray-100 rounded-full shadow-sm bg_gradient px-14"
           data-v-933e9cdf=""
           data-v-0a3af7de=""
           data-v-8b4eb8e5=""
@@ -934,9 +934,9 @@
       </div>
 
       <!-- If User is not logged In  -->
-      <!-- <div class="mt-8 flex items-center gap-x-6 w-full" data-v-933e9cdf="" data-v-0a3af7de="" data-v-8b4eb8e5="">
+      <!-- <div class="flex items-center w-full mt-8 gap-x-6" data-v-933e9cdf="" data-v-0a3af7de="" data-v-8b4eb8e5="">
         <a href="#"
-          class="mx-auto text-center rounded-full text-gray-600 bg-gray-100 bg_gradient px-14 py-3 text-sm font-semibold text-white shadow-sm"
+          class="py-3 mx-auto text-sm font-semibold text-center text-white text-gray-600 bg-gray-100 rounded-full shadow-sm bg_gradient px-14"
           data-v-933e9cdf=""
           data-v-0a3af7de=""
           data-v-8b4eb8e5=""
