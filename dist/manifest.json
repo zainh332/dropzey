@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-8d0ac734.css",
+    "file": "assets/app-5160d208.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -31,6 +31,10 @@
   "src/assets/HeroImage.png": {
     "file": "assets/HeroImage-cf504cfb.png",
     "src": "src/assets/HeroImage.png"
+  },
+  "src/assets/Transaparent-Logo.png": {
+    "file": "assets/Transaparent-Logo-2e454b0f.png",
+    "src": "src/assets/Transaparent-Logo.png"
   },
   "src/assets/Transaparent-Logo1 7.png": {
     "file": "assets/Transaparent-Logo1 7-d322916c.png",
@@ -68,13 +72,13 @@
     "file": "assets/iconimage-8e87896a.png",
     "src": "src/assets/iconimage.png"
   },
+  "src/assets/icons8-google-48.png": {
+    "file": "assets/icons8-google-48-37db90d1.png",
+    "src": "src/assets/icons8-google-48.png"
+  },
   "src/assets/image 12.png": {
     "file": "assets/image 12-82ee70f5.png",
     "src": "src/assets/image 12.png"
-  },
-  "src/assets/image 7.png": {
-    "file": "assets/image 7-5ae60f8f.png",
-    "src": "src/assets/image 7.png"
   },
   "src/assets/image 8.png": {
     "file": "assets/image 8-8cbdbadf.png",
@@ -113,13 +117,15 @@
     "src": "src/assets/umbrellas.png"
   },
   "src/main.css": {
-    "file": "assets/main-8b63aeb7.css",
+    "file": "assets/main-5cdb8804.css",
     "src": "src/main.css"
   },
   "src/main.js": {
     "assets": [
       "assets/mob_logo-0e658c8e.png",
       "assets/logo-6c1ea787.png",
+      "assets/Transaparent-Logo-2e454b0f.png",
+      "assets/icons8-google-48-37db90d1.png",
       "assets/HeroImage-cf504cfb.png",
       "assets/umbrellas-6992eb8f.png",
       "assets/Frame 40-7e74d708.svg",
@@ -133,9 +139,6 @@
       "assets/16540-01 1-8acd324f.png",
       "assets/hero2giveaway-72f9f8ea.png",
       "assets/dropLogo-e6a9ccac.png",
-      "assets/image 7-5ae60f8f.png",
-      "assets/image 8-8cbdbadf.png",
-      "assets/image 9-a0f85bc1.png",
       "assets/banner-ffc15c5b.png",
       "assets/image13-d1b59548.png",
       "assets/image 12-82ee70f5.png",
@@ -144,9 +147,9 @@
       "assets/abcexplorerBanner-ecb54d58.png"
     ],
     "css": [
-      "assets/main-8b63aeb7.css"
+      "assets/main-5cdb8804.css"
     ],
-    "file": "assets/main-0f8104ec.js",
+    "file": "assets/main-d7b47fce.js",
     "isEntry": true,
     "src": "src/main.js"
   }
