@@ -1,36 +1,36 @@
 <template>
   <div>
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center py-12">
+    <div class="mx-auto max-w-7xl">
+      <div class="py-12 text-center">
         <!-- <img
-          class="w-28 h-28 mx-auto object-cover rounded-full"
+          class="object-cover mx-auto rounded-full w-28 h-28"
           src="https://plus.unsplash.com/premium_photo-1679750867619-6f6e57fc8762?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"
           alt=""
         /> -->
-        <img class="w-28 h-28 mx-auto object-cover rounded-full" :src="iconImage" alt="" />
-        <h1 class="text-xl font-bold mt-2">Welcome</h1>
+        <img class="object-cover mx-auto rounded-full w-28 h-28" :src="iconImage" alt="" />
+        <h1 class="mt-2 text-xl font-bold">Welcome</h1>
       </div>
-      <div class="custom-shadow rounded-xl px-4 sm:px-12 py-12">
-        <h1 class="text-xl font-bold mt-2">Basic Info</h1>
+      <div class="px-4 py-12 custom-shadow rounded-xl sm:px-12">
+        <h1 class="mt-2 text-xl font-bold">Basic Info</h1>
         <!-- <p class="text-xs">
           Some info may be visible to other people using Google services.
-          <a class="text-sky-500 font-medium" href="">Learn more</a>
+          <a class="font-medium text-sky-500" href="">Learn more</a>
         </p> -->
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 py-6">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6">
+        <div class="flex flex-col justify-between gap-6 py-6 sm:flex-row sm:items-center">
+          <div class="flex flex-col justify-start gap-6 sm:flex-row sm:items-center">
             <h1 class="text-base font-medium">Profile Picture</h1>
             <p class="text-sm">
               A profile picture helps personalize your account
             </p>
           </div>
           <img
-            class="w-12 sm:w-24 h-12 sm:h-24 ml-auto object-cover rounded-full"
+            class="object-cover w-12 h-12 ml-auto rounded-full sm:w-24 sm:h-24"
             src="https://plus.unsplash.com/premium_photo-1679750867619-6f6e57fc8762?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"
             alt=""
           />
         </div>
         <div class="">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6 border-t py-4">
+          <div class="flex flex-col justify-start gap-6 py-4 border-t sm:flex-row sm:items-center">
             <h1 class="text-base flex items-center gap-2 font-medium mb-2 mt-2 w-[20%]">
               Name
               <svg
@@ -52,7 +52,7 @@
             <input class="border border-gray-300 rounded-md py-1.5 px-2 w-[50%]" type="text" />
             <!-- <p class="text-sm">Zain Haider</p> -->
           </div>
-          <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6 border-t py-4">
+          <div class="flex flex-col justify-start gap-6 py-4 border-t sm:flex-row sm:items-center">
             <h1 class="text-base flex items-center gap-2 font-medium mb-2 mt-2 w-[20%]">
               Email
               <svg
@@ -74,7 +74,7 @@
             <input class="border border-gray-300 rounded-md py-1.5 px-2 w-[50%]" type="email" />
             <!-- <p class="text-sm">Zain Haider</p> -->
           </div>
-          <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6 border-t py-4">
+          <div class="flex flex-col justify-start gap-6 py-4 border-t sm:flex-row sm:items-center">
             <h1 class="text-base flex items-center gap-2 font-medium mb-2 mt-2 w-[20%]">
               Password
               <svg
@@ -96,7 +96,7 @@
             <input class="border border-gray-300 rounded-md py-1.5 px-2 w-[50%]" type="password" />
             <!-- <p class="text-sm">Zain Haider</p> -->
           </div>
-          <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6 border-t py-4">
+          <div class="flex flex-col justify-start gap-6 py-4 border-t sm:flex-row sm:items-center">
             <h1 class="text-base flex items-center gap-2 font-medium mb-2 mt-2 w-[20%]">
               Date of Birth
               <svg
@@ -118,7 +118,7 @@
             <!-- <p class="text-sm">December 7, 1991</p> -->
             <input class="border border-gray-300 rounded-md py-1.5 px-2 w-[50%]" type="date" />
           </div>
-          <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6 border-t py-4">
+          <div class="flex flex-col justify-start gap-6 py-4 border-t sm:flex-row sm:items-center">
             <h1 class="text-base flex items-center gap-2 font-medium mb-2 mt-2 w-[20%]">
               Phone Number
               <svg
@@ -140,7 +140,7 @@
             <!-- <p class="text-sm">December 7, 1991</p> -->
             <input class="border border-gray-300 rounded-md py-1.5 px-2 w-[50%]" type="phone" />
           </div>
-          <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6 border-t py-4">
+          <div class="flex flex-col justify-start gap-6 py-4 border-t sm:flex-row sm:items-center">
             <h1 class="text-base flex items-center gap-2 font-medium mb-2 mt-2 w-[20%]">
               Gender
               <svg
@@ -164,7 +164,7 @@
               <option value="CA">Female</option>
             </select>
           </div>
-          <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6 border-t py-4">
+          <div class="flex flex-col justify-start gap-6 py-4 border-t sm:flex-row sm:items-center">
             <h1 class="text-base flex items-center gap-2 font-medium mb-2 mt-2 w-[20%]">
               Country
               <svg
@@ -189,7 +189,7 @@
               <option value="UK">United Kingdom</option>
             </select>
           </div>
-          <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6 border-t border-b py-4">
+          <div class="flex flex-col justify-start gap-6 py-4 border-t border-b sm:flex-row sm:items-center">
             <h1 class="text-base flex items-center gap-2 font-medium mb-2 mt-2 w-[20%]">
               Wallet Connected
               <svg
@@ -211,13 +211,13 @@
             
             <!-- When wallet is not connected -->
             <button class="flex items-center justify-center gap-2 border bg-gray-100 rounded-full px-10 py-1.5 w-full sm:w-auto">
-              <span class="text-s text-gray-500 font-medium">
+              <span class="font-medium text-gray-500 text-s">
                 Connect Wallet
               </span>
             </button>
 
             <!-- When wallet is connected -->
-            <!-- <p class="text-sm overflow-scroll example">
+            <!-- <p class="overflow-scroll text-sm example">
               GANXQETJKJKPOIYRHNMALK759342HAKNAQWERTYUIOPLK
             </p> -->
           </div>
@@ -226,8 +226,8 @@
         <div class="mt-12">
           <div>
             <div class="hidden sm:block">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 py-6">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-start gap-6">
+              <div class="flex flex-col justify-between gap-6 py-6 sm:flex-row sm:items-center">
+                <div class="flex flex-col justify-start gap-6 sm:flex-row sm:items-center">
                   <h1 class="text-base font-medium">Social Media Account</h1>
                   <svg
                         v-tooltip="'Connect your social media accounts'"
@@ -246,28 +246,28 @@
                     </svg>
                 </div>
                   <button class="flex items-center justify-center gap-2 border bg-gray-100 bg_hover_gradient hover:text-white shadow-sm rounded-full px-10 py-1.5 w-full sm:w-auto">
-                    <span class="text-s text-gray-100 font-medium">
+                    <span class="font-medium text-gray-100 text-s">
                       Twitter
                     </span>
                   </button>
                   <button class="flex items-center justify-center gap-2 border bg-gray-100 bg_hover_gradient hover:text-white shadow-sm rounded-full px-10 py-1.5 w-full sm:w-auto">
-                    <span class="text-s text-gray-100 font-medium">
+                    <span class="font-medium text-gray-100 text-s">
                      Discord
                     </span>
                   </button>
                   <button class="flex items-center justify-center gap-2 border bg-gray-100 bg_hover_gradient hover:text-white shadow-sm rounded-full px-10 py-1.5 w-full sm:w-auto">
-                    <span class="text-s text-gray-100 font-medium">
+                    <span class="font-medium text-gray-100 text-s">
                       Telegram
                     </span>
                   </button>
                   <button class="flex items-center justify-center gap-2 border bg-gray-100 bg_hover_gradient hover:text-white shadow-sm rounded-full px-10 py-1.5 w-full sm:w-auto">
-                    <span class="text-s text-gray-100 font-medium">
+                    <span class="font-medium text-gray-100 text-s">
                       Youtube
                     </span>
                   </button>
 
                 <!-- <img
-                  class="w-12 sm:w-24 h-12 sm:h-24 ml-auto object-cover rounded-full"
+                  class="object-cover w-12 h-12 ml-auto rounded-full sm:w-24 sm:h-24"
                   src="https://plus.unsplash.com/premium_photo-1679750867619-6f6e57fc8762?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"
                   alt=""
                 /> -->
@@ -278,8 +278,8 @@
         <div class="mt-12">
           <div>
             <div class="hidden sm:block">
-              <div class=" ">
-                <nav class="-mb-px flex space-x-8" aria-label="Tabs">
+              <div class="">
+                <nav class="flex -mb-px space-x-8" aria-label="Tabs">
                   <span v-for="(tab, index) in tabs" :key="tab.name" @click="setTab(index)" :class="[
                     index === currentTab
                       ? 'border-primary bg-primary rounded-md text-white   px-4 cursor-pointer'
@@ -293,49 +293,49 @@
         </div>
 
 
-        <div v-if="currentTab === 0" class="flex flex-col sm:flex-row items-center gap-6 py-12">
-          <div class="border rounded-xl py-8 w-full px-4">
+        <div v-if="currentTab === 0" class="flex flex-col items-center gap-6 py-12 sm:flex-row">
+          <div class="w-full px-4 py-8 border rounded-xl">
             <h1
-              class="max-w-2xl mx-auto text-center text_gradient leading-loose bg-black text-xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+              class="max-w-2xl mx-auto text-xl font-bold leading-loose tracking-tight text-center text-gray-900 bg-black text_gradient sm:text-3xl">
               12
             </h1>
             <p class="text-2xl font-medium text-center">Airdrop Participated</p>
           </div>
-          <div class="border rounded-xl py-8 w-full px-4">
+          <div class="w-full px-4 py-8 border rounded-xl">
             <h1
-              class="max-w-2xl mx-auto text-center text_gradient leading-loose bg-black text-xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+              class="max-w-2xl mx-auto text-xl font-bold leading-loose tracking-tight text-center text-gray-900 bg-black text_gradient sm:text-3xl">
               $400
             </h1>
             <p class="text-2xl font-medium text-center">Earned</p>
           </div>
         </div>
         <div v-else-if="currentTab === 1" class="flex flex-col gap-8 py-12">
-          <table class="min-w-full divide-y divide-gray-200 border border-gray-300">
+          <table class="min-w-full border border-gray-300 divide-y divide-gray-200">
             <thead>
               <tr>
-                <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                <th class="px-1 py-3 text-base font-medium tracking-wider text-left uppercase border-b border-gray-300 bg-gray-50 text_gradient">
                   Project Name
                 </th>
-                <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                <th class="px-1 py-3 text-base font-medium tracking-wider text-left uppercase border-b border-gray-300 bg-gray-50 text_gradient">
                   Wallet Connected
                 </th>
-                <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                <th class="px-1 py-3 text-base font-medium tracking-wider text-left uppercase border-b border-gray-300 bg-gray-50 text_gradient">
                   Transactions
                 </th>
-                <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                <th class="px-1 py-3 text-base font-medium tracking-wider text-left uppercase border-b border-gray-300 bg-gray-50 text_gradient">
                   Total Allocated Tokens
                 </th>
-                <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                <th class="px-1 py-3 text-base font-medium tracking-wider text-left uppercase border-b border-gray-300 bg-gray-50 text_gradient">
                   Remained Tokens
                 </th>
-                <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                <th class="px-1 py-3 text-base font-medium tracking-wider text-left uppercase border-b border-gray-300 bg-gray-50 text_gradient">
                   Reward Amount
                 </th>
-                <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                <th class="px-1 py-3 text-base font-medium tracking-wider text-left uppercase border-b border-gray-300 bg-gray-50 text_gradient">
                   Total Participants
                 </th>
                 
-                <th class="px-1 py-3 bg-gray-50 text_gradient text-left text-base font-medium uppercase tracking-wider border-b border-gray-300">
+                <th class="px-1 py-3 text-base font-medium tracking-wider text-left uppercase border-b border-gray-300 bg-gray-50 text_gradient">
                   Status
                 </th>
               </tr>
@@ -366,16 +366,16 @@
             </tbody>
           </table>
         </div>
-        <!-- <div class="mt-4 flex items-center gap-x-6 w-full" data-v-933e9cdf="" data-v-0a3af7de="">
+        <!-- <div class="flex items-center w-full mt-4 gap-x-6" data-v-933e9cdf="" data-v-0a3af7de="">
           <a href="#"
-            class="mx-auto text-center rounded-full text-gray-600 bg-gray-100 bg_gradient px-14 py-3 text-sm font-semibold text-white shadow-sm"
+            class="py-3 mx-auto text-sm font-semibold text-center text-white text-gray-600 bg-gray-100 rounded-full shadow-sm bg_gradient px-14"
             data-v-933e9cdf="" data-v-0a3af7de="">View Activity</a>
         </div> -->
       </div>
       <!-- <section>
-        <div class="py-32 px-4">
-          <div data-v-2a4902a9="" class="max-w-7xl mx-auto text-start">
-            <h1 data-v-2a4902a9="" class="max-w-2xl mr-auto text_gradient leading-loose bg-black text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+        <div class="px-4 py-32">
+          <div data-v-2a4902a9="" class="mx-auto max-w-7xl text-start">
+            <h1 data-v-2a4902a9="" class="max-w-2xl mr-auto text-3xl font-bold leading-loose tracking-tight text-gray-900 bg-black text_gradient sm:text-5xl">
               Explore Our Airdrops
             </h1>
             <p data-v-2a4902a9="" class="text-base leading-10 text-gray-400">
@@ -385,14 +385,14 @@
           </div>
         </div>
       </section>
-      <section class="py-0 px-2">
+      <section class="px-2 py-0">
         <Carousel />
       </section> -->
       <section>
         <div class="py-32">
-          <div class="max-w-7xl mx-auto text-center lg:flex-auto">
+          <div class="mx-auto text-center max-w-7xl lg:flex-auto">
             <h1
-              class="max-w-2xl mx-auto text_gradient leading-loose bg-black text-5xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+              class="max-w-2xl mx-auto text-5xl font-bold leading-loose tracking-tight text-gray-900 bg-black text_gradient sm:text-5xl">
               Latest News
             </h1>
             <p class="mt-6 text-base leading-10 text-gray-400">
@@ -400,8 +400,8 @@
               on Dropzey
             </p>
           </div>
-          <div class="max-w-7xl mx-auto pt-10">
-            <NewsCard />
+          <div class="pt-10 mx-auto max-w-7xl">
+            <MediumBlogPost />
           </div>
         </div>
       </section>
@@ -411,10 +411,9 @@
 </template>
 <script setup>
 import Carousel from "@/components/Carousel.vue";
-import NewsCard from "@/components/NewsCard.vue";
+import MediumBlogPost from "@/components/Medium-Blog-Post.vue";
 import Footer from "@/components/Footer.vue";
 import { ref } from "vue";
-import MinAirdrop from "@/components/MinAirdrop.vue";
 import iconImage from "@/assets/iconimage.png";
 import {
   // Directives

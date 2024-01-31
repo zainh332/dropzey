@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="airDrop flex min-w-full items-center overflow-auto justify-between gap-8">
+    <div class="flex items-center justify-between min-w-full gap-8 overflow-auto airDrop">
       <div class="dropLogo shrink-0">
         <img :src="dropLogo" alt="" />
       </div>
@@ -13,7 +13,7 @@
           <span class="title">@CashFinanceApp</span> extends a warm welcome to
           newcomers through an exciting Gleam campaign۔
         </p>
-        <div class="flex mt-4 items-center gap-8">
+        <div class="flex items-center gap-8 mt-4">
           <div class="flex items-center gap-4">
             <div class="bg-[#08C] h-8 rounded-[6px] w-8 flex items-center justify-center">
               <svg
@@ -150,137 +150,14 @@
             </svg>
           </div>
         </div>
-        <div class="w-full flex">
-          <!-- <button @click="setAirdrop" class="btn ml-auto">Claim Now</button> -->
-          <router-link to="/airdrop" class="btn ml-auto">
+        <div class="flex w-full">
+          <!-- <button @click="setAirdrop" class="ml-auto btn">Claim Now</button> -->
+          <router-link to="/airdrop" class="ml-auto btn">
             <button>Claim Now</button>
           </router-link>
         </div>
       </div>
     </div>
-
-    <!--Claim Airdrop Modal-->
-    <TransitionRoot as="template" :show="claim_airdrop_modal">
-      <Dialog as="div" class="relative z-10" @close="claim_airdrop_modal = false">
-        <TransitionChild
-          as="template"
-          enter="ease-out duration-300"
-          enter-from="opacity-0"
-          enter-to="opacity-100"
-          leave="ease-in duration-200"
-          leave-from="opacity-100"
-          leave-to="opacity-0"
-        >
-          <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"/>
-        </TransitionChild>
-
-        <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
-          <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-start sm:p-0">
-            <TransitionChild
-              as="template"
-              enter="ease-out duration-300"
-              enter-from="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-              enter-to="opacity-100 translate-y-0 sm:scale-100"
-              leave="ease-in duration-200"
-              leave-from="opacity-100 translate-y-0 sm:scale-100"
-              leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-            >
-              <DialogPanel class="custom-margin relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:w-full sm:max-w-3xl sm:p-6">
-                <!-- <DialogPanel class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:w-full sm:max-w-3xl sm:p-6" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"> -->
-                <div>
-                  <div class="mt-3 text-center sm:mt-5">
-                    <h3 class="properHeading">
-                      <!-- Follow and Subscribe to Claim your Airdrop -->
-                      Claim your Airdrop
-                    </h3>
-                  </div>
-                </div>
-                <!-- <div class="flex mt-8 gap-4 items-center justify-center flex-col md:flex-row">
-                  <button class="successBtnClaim">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M13.808 10.469L20.88 2h-1.676l-6.142 7.353L8.158 2H2.5l7.418 11.12L2.5 22h1.676l6.486-7.765L15.842 22H21.5l-7.693-11.531Zm-2.296 2.748l-.752-1.107L4.78 3.3h2.575l4.826 7.11l.751 1.107l6.273 9.242h-2.574l-5.12-7.541Z"
-                      />
-                    </svg>
-                    Follow Dropzey
-                  </button>
-                  <button class="modalBtn">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="33"
-                      height="25"
-                      viewBox="0 0 33 25"
-                      fill="none"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M13.6814 16.5337V6.91342C16.8689 8.52045 19.3377 10.0729 22.2574 11.7466C19.8492 13.1775 16.8689 14.783 13.6814 16.5337ZM31.4455 2.12883C30.8957 1.35267 29.9585 0.748494 28.9608 0.548471C26.0283 -0.0481857 7.73348 -0.0498829 4.80255 0.548471C4.00248 0.709168 3.29004 1.0976 2.67803 1.70109C0.0993224 4.26549 0.907368 18.0175 1.52894 20.2452C1.79031 21.2094 2.12821 21.9048 2.55374 22.3612C3.102 22.9647 3.85265 23.3803 4.71488 23.5666C7.12943 24.1017 19.5688 24.4009 28.9098 23.647C29.7705 23.4863 30.5323 23.0573 31.1331 22.4282C33.5174 19.8741 33.3548 5.34971 31.4455 2.12883Z"
-                        fill="#DD4B39"
-                      />
-                    </svg>
-                    <span> Subscribe Dropzey</span>
-                  </button>
-                </div> -->
-
-                <div class="mt-8 flex items-center justify-center gap-8">
-                  <div class="flex items-center flex-col gap-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="49"
-                      height="48"
-                      viewBox="0 0 49 48"
-                      fill="none"
-                    >
-                      <path
-                        d="M24.5607 47.5908C37.5946 47.5572 48.1336 36.964 48.1 23.9301C48.0665 10.8962 37.4733 0.357247 24.4394 0.390764C11.4054 0.42428 0.866526 11.0175 0.900042 24.0514C0.933558 37.0854 11.5268 47.6243 24.5607 47.5908Z"
-                        fill="#FFD34D"
-                      />
-                      <path
-                        d="M32.6996 20.2907V19.5907C32.6996 18.4907 31.7996 17.5907 30.6996 17.5907H24.1996C24.6996 16.7907 25.2996 15.1907 24.9996 12.0907C24.7996 10.2907 23.5996 8.89065 22.3996 8.49065C21.1996 8.09065 20.0996 8.99065 20.2996 10.1907C20.3996 10.7907 20.6996 11.3907 20.5996 12.2907C20.3996 15.3907 18.5996 17.6907 17.6996 18.7907C17.4996 18.9907 17.2996 19.1907 17.0996 19.3907H16.9996C15.5996 20.8907 15.6996 22.2907 15.6996 22.2907H14.0996V33.5907H16.2996C18.6996 36.1907 21.4996 36.3907 22.8996 36.2907C23.0996 36.3907 23.2996 36.3907 23.4996 36.3907H30.4996C31.5996 36.3907 32.4996 35.4907 32.4996 34.3907V33.6907C32.4996 32.5907 31.5996 31.6907 30.4996 31.6907C31.5996 31.6907 32.4996 30.7907 32.4996 29.6907V28.9907C32.4996 27.8907 31.5996 26.9907 30.4996 26.9907C31.5996 26.9907 32.8996 26.0907 32.8996 24.9907V24.2907C32.8996 23.1907 31.5996 22.2907 30.4996 22.2907C31.7996 22.2907 32.6996 21.3907 32.6996 20.2907Z"
-                        fill="white"
-                      />
-                    </svg>
-                    <span class="vote">Upvote</span>
-                  </div>
-                  <div class="flex items-center flex-col gap-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="49"
-                      height="48"
-                      viewBox="0 0 49 48"
-                      fill="none"
-                    >
-                      <path
-                        d="M24.5607 47.5908C37.5946 47.5572 48.1336 36.964 48.1 23.9301C48.0665 10.8962 37.4733 0.357247 24.4394 0.390764C11.4054 0.42428 0.866526 11.0175 0.900042 24.0514C0.933558 37.0854 11.5268 47.6243 24.5607 47.5908Z"
-                        fill="#FFD34D"
-                      />
-                      <path
-                        d="M15.2999 26.0926L15.2999 26.7926C15.2999 27.8926 16.1999 28.7926 17.2999 28.7926L23.7999 28.7926C23.2999 29.5926 22.6999 31.1926 22.9999 34.2926C23.1999 36.0926 24.3999 37.4926 25.5999 37.8926C26.7999 38.2926 27.8999 37.3926 27.6999 36.1926C27.5999 35.5926 27.2999 34.9926 27.3999 34.0926C27.5999 30.9926 29.3999 28.6926 30.2999 27.5926C30.4999 27.3926 30.6999 27.1926 30.8999 26.9926L30.9999 26.9926C32.3999 25.4926 32.2999 24.0926 32.2999 24.0926L33.8999 24.0926L33.8999 12.7926L31.6999 12.7926C29.2999 10.1926 26.4999 9.99261 25.0999 10.0926C24.8999 9.99261 24.6999 9.9926 24.4999 9.9926L17.4999 9.9926C16.3999 9.9926 15.4999 10.8926 15.4999 11.9926L15.4999 12.6926C15.4999 13.7926 16.3999 14.6926 17.4999 14.6926C16.3999 14.6926 15.4999 15.5926 15.4999 16.6926L15.4999 17.3926C15.4999 18.4926 16.3999 19.3926 17.4999 19.3926C16.3999 19.3926 15.0999 20.2926 15.0999 21.3926L15.0999 22.0926C15.0999 23.1926 16.3999 24.0926 17.4999 24.0926C16.1999 24.0926 15.2999 24.9926 15.2999 26.0926Z"
-                        fill="white"
-                      />
-                    </svg>
-                    <span class="vote">Downvote</span>
-                  </div>
-                </div>
-
-                <div class="mt-5 sm:mt-6 flex">
-                  <button type="button" class="btnClaim mx-auto" @click="open = false">
-                    Claim Airdrop
-                  </button>
-                </div>
-              </DialogPanel>
-            </TransitionChild>
-          </div>
-        </div>
-      </Dialog>
-    </TransitionRoot>
   </div>
 </template>
 

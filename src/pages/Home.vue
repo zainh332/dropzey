@@ -6,7 +6,7 @@
       :style="{ backgroundImage: 'url(' + banner + ')' }"
     >
       <!-- 7xl -->
-      <div class="max-w-7xl py-16 sm:py-32 mx-auto md:px-4 px-8">
+      <div class="px-8 py-16 mx-auto max-w-7xl sm:py-32 md:px-4">
         <div class="max-w-2xl">
           <Heading
             myclass="text-left"
@@ -17,7 +17,7 @@
               Explore opportunities to claim tokens, rewards, and more. Elevate your experience with Dropzey
             </p>
           </div>
-          <div class="flex gap-4 sm:flex-row flex-col mt-10">
+          <div class="flex flex-col gap-4 mt-10 sm:flex-row">
             <router-link to="/create-airdrop">
               <button class="btn">List My Airdrop</button>
             </router-link>
@@ -38,16 +38,16 @@
       </div>
     </div>
     <section>
-      <div class="py-24 md:px-4 px-8">
+      <div class="px-8 py-24 md:px-4">
         <div class="max-w-5xl mx-auto text-center">
-          <h1 class="max-w-2xl mx-auto text_gradient leading-loose bg-black text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+          <h1 class="max-w-2xl mx-auto text-3xl font-bold leading-loose tracking-tight text-gray-900 bg-black text_gradient sm:text-5xl">
             Explore Our Airdrops
           </h1>
           <p class="mt-6 text-base leading-10 text-gray-400">
             Discover diverse airdrop opportunities in the crypto world. Engage, earn, and be part of the future of decentralized finance effortlessly.
           </p>
         </div>
-        <div class="max-w-7xl mx-auto py-10">
+        <div class="py-10 mx-auto max-w-7xl">
           <Card />
         </div>
         <div class="text-center">
@@ -58,58 +58,58 @@
         </div>
       </div>
     </section>
-    <section class=" ">
-      <div class="px-8 md:px-4 py-8">
+    <section class="">
+      <div class="px-8 py-8 md:px-4">
         <div class="max-w-5xl mx-auto text-center">
-          <h1 class="max-w-2xl mx-auto text_gradient leading-loose bg-black text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+          <h1 class="max-w-2xl mx-auto text-3xl font-bold leading-loose tracking-tight text-gray-900 bg-black text_gradient sm:text-5xl">
             Top Earning Wallets
           </h1>
           <p class="mt-6 text-sm md:text-base leading-6 text-[#000]">
             Explore these wallets' airdrop earnings and transaction details to witness their remarkable success
           </p>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto my-16">
+        <div class="grid grid-cols-1 gap-6 mx-auto my-16 lg:grid-cols-3 max-w-7xl">
           <div class="bg-card">
             <p class="text-gray-500 text-md">Wallet Address</p>
-            <p class="text-gray-900 font-bold text-md">
+            <p class="font-bold text-gray-900 text-md">
               GARATAHLKN....ZUJKMALQKVNLN6
             </p>
-            <p class="text-gray-500 text-md mt-4">Total Airdrop Earnings:</p>
+            <p class="mt-4 text-gray-500 text-md">Total Airdrop Earnings:</p>
             <p class="text-2xl font-bold">$500</p>
-            <div class="mt-4 flex items-center gap-x-6 w-full">
+            <div class="flex items-center w-full mt-4 gap-x-6">
               <a
                 href="/explorer"
-                class="w-full text-center rounded-full text-gray-600 bg-gray-100 bg_hover_gradient px-14 py-3 text-sm font-semibold hover:text-white shadow-sm"
+                class="w-full py-3 text-sm font-semibold text-center text-gray-600 bg-gray-100 rounded-full shadow-sm bg_hover_gradient px-14 hover:text-white"
                 >View Transactions</a
               >
             </div>
           </div>
           <div class="bg-card">
             <p class="text-gray-500 text-md">Wallet Address</p>
-            <p class="text-gray-900 font-bold text-md">
+            <p class="font-bold text-gray-900 text-md">
               GARATAHLKN....ZUJKMALQKVNLN6
             </p>
-            <p class="text-gray-500 text-md mt-4">Total Airdrop Earnings:</p>
+            <p class="mt-4 text-gray-500 text-md">Total Airdrop Earnings:</p>
             <p class="text-2xl font-bold">$500</p>
-            <div class="mt-4 flex items-center gap-x-6 w-full">
+            <div class="flex items-center w-full mt-4 gap-x-6">
               <a
                 href="#"
-                class="w-full text-center rounded-full text-gray-600 bg-gray-100 bg_hover_gradient px-14 py-3 text-sm font-semibold hover:text-white shadow-sm"
+                class="w-full py-3 text-sm font-semibold text-center text-gray-600 bg-gray-100 rounded-full shadow-sm bg_hover_gradient px-14 hover:text-white"
                 >View Transactions</a
               >
             </div>
           </div>
           <div class="bg-card">
             <p class="text-gray-500 text-md">Wallet Address</p>
-            <p class="text-gray-900 font-bold text-md">
+            <p class="font-bold text-gray-900 text-md">
               GARATAHLKN....ZUJKMALQKVNLN6
             </p>
-            <p class="text-gray-500 text-md mt-4">Total Airdrop Earnings:</p>
+            <p class="mt-4 text-gray-500 text-md">Total Airdrop Earnings:</p>
             <p class="text-2xl font-bold">$500</p>
-            <div class="mt-4 flex items-center gap-x-6 w-full">
+            <div class="flex items-center w-full mt-4 gap-x-6">
               <a
                 href="#"
-                class="w-full text-center rounded-full text-gray-600 bg-gray-100 bg_hover_gradient px-14 py-3 text-sm font-semibold hover:text-white shadow-sm"
+                class="w-full py-3 text-sm font-semibold text-center text-gray-600 bg-gray-100 rounded-full shadow-sm bg_hover_gradient px-14 hover:text-white"
                 >View Transactions</a
               >
             </div>
@@ -120,72 +120,72 @@
     <section class="py-8">
       <div class="px-8 md:px-4">
         <div class="max-w-5xl mx-auto text-center">
-          <h1 class="max-w-2xl mx-auto text_gradient leading-loose bg-black text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+          <h1 class="max-w-2xl mx-auto text-3xl font-bold leading-loose tracking-tight text-gray-900 bg-black text_gradient sm:text-5xl">
             How It Works
           </h1>
-          <p class="mt-6 text-sm md:text-base leading-6 text-black">
+          <p class="mt-6 text-sm leading-6 text-black md:text-base">
             Explore how participants engage in Dropzey's airdrop process effortlessly.
           </p>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto my-16">
-        <div class="bg-card text-center">
-          <div class="relative w-fit mx-auto">
-            <div class="w-20 h-20 bg_gradient rounded-full p-2 flex items-center justify-center">
+        <div class="grid grid-cols-1 gap-6 mx-auto my-16 lg:grid-cols-3 max-w-7xl">
+        <div class="text-center bg-card">
+          <div class="relative mx-auto w-fit">
+            <div class="flex items-center justify-center w-20 h-20 p-2 rounded-full bg_gradient">
               <h1 class="text-4xl font-semibold text-white">01</h1>
             </div>
-            <div class="bg-yellow-300 text-xs text-gray-800 w-fit rounded-full px-4 font-medium absolute -top-2 left-3">
+            <div class="absolute px-4 text-xs font-medium text-gray-800 bg-yellow-300 rounded-full w-fit -top-2 left-3">
               Step
             </div>
           </div>
-          <p class="text-gray-900 font-bold text-lg mt-4">Connect Wallet</p>
-          <p class="text-gray-500 text-md mt-2">
+          <p class="mt-4 text-lg font-bold text-gray-900">Connect Wallet</p>
+          <p class="mt-2 text-gray-500 text-md">
             Link your wallet to participate in airdrops seamlessly.
           </p>
         </div>
         
-        <div class="bg-card text-center">
-          <div class="relative w-fit mx-auto">
-            <div class="w-20 h-20 bg_gradient rounded-full p-2 flex items-center justify-center">
+        <div class="text-center bg-card">
+          <div class="relative mx-auto w-fit">
+            <div class="flex items-center justify-center w-20 h-20 p-2 rounded-full bg_gradient">
               <h1 class="text-4xl font-semibold text-white">02</h1>
             </div>
-            <div class="bg-yellow-300 text-xs text-gray-800 w-fit rounded-full px-4 font-medium absolute -top-2 left-3">
+            <div class="absolute px-4 text-xs font-medium text-gray-800 bg-yellow-300 rounded-full w-fit -top-2 left-3">
               Step
             </div>
           </div>
-          <p class="text-gray-900 font-bold text-lg mt-4">Complete Steps</p>
-          <p class="text-gray-500 text-md mt-2">
+          <p class="mt-4 text-lg font-bold text-gray-900">Complete Steps</p>
+          <p class="mt-2 text-gray-500 text-md">
             Follow simple instructions to fulfill airdrop requirements.
           </p>
         </div>
-        <div class="bg-card text-center">
-          <div class="relative w-fit mx-auto">
-            <div class="w-20 h-20 bg_gradient rounded-full flex items-center justify-center">
+        <div class="text-center bg-card">
+          <div class="relative mx-auto w-fit">
+            <div class="flex items-center justify-center w-20 h-20 rounded-full bg_gradient">
               <h1 class="text-4xl font-semibold text-white">03</h1>
             </div>
-            <div class="bg-yellow-300 text-xs text-gray-800 w-fit rounded-full px-4 font-medium absolute -top-2 left-3">
+            <div class="absolute px-4 text-xs font-medium text-gray-800 bg-yellow-300 rounded-full w-fit -top-2 left-3">
               Step
             </div>
           </div>
-          <p class="text-gray-900 font-bold text-lg mt-4">
+          <p class="mt-4 text-lg font-bold text-gray-900">
             Claim Reward Instantly
           </p>
-          <p class="text-gray-500 text-md mt-2">
+          <p class="mt-2 text-gray-500 text-md">
             Receive your rewards instantly upon successful completion.
           </p>
         </div>
       </div>
       </div>
     </section>
-    <section class="md:py-0 py- mt-20">
+    <section class="mt-20 md:py-0 py-">
       <div class="grid md:grid-cols-2 gap-y-6">
-        <div class="max-w-xl mx-auto flex md:px-0 px-6 items-center jus">
+        <div class="flex items-center max-w-xl px-6 mx-auto md:px-0 jus">
           <div>
             <h1
-              class="max-w-2xl text_gradient leading-loose bg-black text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl"
+              class="max-w-2xl text-3xl font-bold leading-loose tracking-tight text-gray-900 bg-black text_gradient sm:text-5xl"
             >
               Empowering Airdrop Creators
             </h1>
-            <p class="text-xl font-bold py-3">Benefits:</p>
+            <p class="py-3 text-xl font-bold">Benefits:</p>
             <ul class="space-y-3">
               <li>
                 <div class="flex items-center gap-2">
@@ -233,13 +233,13 @@
       </div>
     </section>
     <section class="py- md:py-0">
-      <div class="grid md:grid-cols-2 mx-auto gap-y-6">
-        <div class="max-w-xl mx-auto md:px-0 px-6 flex items-center md:order-2">
+      <div class="grid mx-auto md:grid-cols-2 gap-y-6">
+        <div class="flex items-center max-w-xl px-6 mx-auto md:px-0 md:order-2">
           <div>
-            <h1 class="max-w-2xl text_gradient leading-loose bg-black text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl mt-10 md:mt-0">
+            <h1 class="max-w-2xl mt-10 text-3xl font-bold leading-loose tracking-tight text-gray-900 bg-black text_gradient sm:text-5xl md:mt-0">
               Elevating Airdrop Participants
             </h1>
-            <p class="text-xl font-bold py-3">Benefits:</p>
+            <p class="py-3 text-xl font-bold">Benefits:</p>
             <ul class="space-y-3">
               <li>
                 <div class="flex items-center gap-2">
@@ -282,9 +282,9 @@
       </div>
     </section>
     <!-- <section>
-      <div class="bg-blue-100 py-32 px-8 md:px-4">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          <div class="bg-card flex flex-col items-center justify-center">
+      <div class="px-8 py-32 bg-blue-100 md:px-4">
+        <div class="grid max-w-4xl grid-cols-1 gap-6 mx-auto md:grid-cols-3">
+          <div class="flex flex-col items-center justify-center bg-card">
             <div class="">
               <svg
                 width="78"
@@ -324,12 +324,12 @@
                 </defs>
               </svg>
             </div>
-            <p class="text_gradient text-3xl font-bold">842</p>
+            <p class="text-3xl font-bold text_gradient">842</p>
             <p class="text-gray-500 text-md" data-v-2a4902a9="">
               Listed Airdrops
             </p>
           </div>
-          <div class="bg-card flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center bg-card">
             <div class="">
               <svg
                 width="90"
@@ -402,10 +402,10 @@
                 </defs>
               </svg>
             </div>
-            <p class="text_gradient text-3xl font-bold">42</p>
+            <p class="text-3xl font-bold text_gradient">42</p>
             <p class="text-gray-500 text-md" data-v-2a4902a9="">Active</p>
           </div>
-          <div class="bg-card flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center bg-card">
             <div class="">
               <svg
                 width="89"
@@ -479,7 +479,7 @@
                 </defs>
               </svg>
             </div>
-            <p class="text_gradient text-3xl font-bold">54.04%</p>
+            <p class="text-3xl font-bold text_gradient">54.04%</p>
             <p class="text-gray-500 text-md" data-v-2a4902a9="">
               ERC20 Token Dominance
             </p>
@@ -493,17 +493,17 @@
       </div>
     </section> -->
     <section>
-      <div class="py-16 px-8 md:px-4">
-        <div class="max-w-7xl mx-auto text-center lg:flex-auto">
-          <h1 class="max-w-2xl mx-auto text_gradient leading-loose bg-black text-5xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+      <div class="px-8 py-16 md:px-4">
+        <div class="mx-auto text-center max-w-7xl lg:flex-auto">
+          <h1 class="max-w-2xl mx-auto text-5xl font-bold leading-loose tracking-tight text-gray-900 bg-black text_gradient sm:text-5xl">
             Latest News
           </h1>
           <p class="mt-6 text-base leading-6 text-gray-400">
             Dive into breaking news, insights, and updates about airdrops, cryptocurrencies, and blockchain innovations on Dropzey
           </p>
         </div>
-        <div class="max-w-5xl mx-auto pt-10">
-          <NewsCard />
+        <div class="max-w-5xl pt-10 mx-auto">
+          <MediumBlogPost />
         </div>
       </div>
     </section>
@@ -517,7 +517,7 @@ import banner from "@/assets/banner.png";
 import logoFire from "@/assets/Frame 40.svg";
 import hero1 from "@/assets/16540-01 1.png";
 import hero2 from "@/assets/hero2giveaway.png";
-import NewsCard from "@/components/NewsCard.vue";
+import MediumBlogPost from "@/components/Medium-Blog-Post.vue";
 import Footer from "@/components/Footer.vue";
 import Heading from "@/components/Heading.vue";
 </script>

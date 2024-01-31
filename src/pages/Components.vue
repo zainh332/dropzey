@@ -1,14 +1,14 @@
 <template>
   <div class="">
-    <div class="bg-primary py-32">
-      <div class="max-w-7xl px-8 flex flex-col gap-20 mx-auto my-20">
+    <div class="py-32 bg-primary">
+      <div class="flex flex-col gap-20 px-8 mx-auto my-20 max-w-7xl">
         <Carousel />
         <Heading text="This is cool" />
         <Card />
         <Airdrop />
         <Steps />
         <ABCExplorer />
-        <NewsCard />
+        <MediumBlogPost />
       </div>
     </div>
 
@@ -25,7 +25,7 @@ import EarningCard from "@/components/EC.vue";
 import Airdrop from "@/components/Airdrop.vue";
 import Steps from "@/components/Steps.vue";
 import ABCExplorer from "@/components/ABCExplorer.vue";
-import NewsCard from "@/components/NewsCard.vue";
+import MediumBlogPost from "@/components/Medium-Blog-Post.vue";
 </script>
 
 <style lang="scss" scoped></style>

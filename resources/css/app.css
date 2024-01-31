@@ -6,6 +6,56 @@
 * {
   font-family: "Inter", sans-serif;
 }
+
+ /* Wallet Modal */
+ .modal {
+  background-color: #242424f2 !important;
+}
+.modal-dialog {
+  margin: 4.75rem auto !important;
+  z-index: 1045;
+}
+.modal-header{
+  border-bottom: 0px;
+}
+.modal-content{
+  border-radius: 10px;
+}
+.modal-wallet {
+  padding: 40px 20px;
+}
+.modal-wallet h1 {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.walletconnect-btn {
+  background: linear-gradient(90deg, #0298b1 0%, #7bd759 100%);
+  padding: .9em 7.6em;
+  border-radius: 50px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  margin: auto;
+  width: 100%;
+  max-width: 280px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.walletconnect-btn:hover{
+  color: white;
+}
+
+/* wallet modal */
+
+
+
 .bg_gradient {
   background: linear-gradient(90deg, #0298b1 0%, #7bd759 100%);
 }
