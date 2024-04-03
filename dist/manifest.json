@@ -56,6 +56,10 @@
     "file": "assets/cardBallon-9e9adaf3.png",
     "src": "src/assets/cardBallon.png"
   },
+  "src/assets/discord.png": {
+    "file": "assets/discord-c5bb956b.png",
+    "src": "src/assets/discord.png"
+  },
   "src/assets/dropLogo.png": {
     "file": "assets/dropLogo-e6a9ccac.png",
     "src": "src/assets/dropLogo.png"
@@ -88,10 +92,6 @@
     "file": "assets/image 9-a0f85bc1.png",
     "src": "src/assets/image 9.png"
   },
-  "src/assets/image13.png": {
-    "file": "assets/image13-d1b59548.png",
-    "src": "src/assets/image13.png"
-  },
   "src/assets/knowme.png": {
     "file": "assets/knowme-cde664e6.png",
     "src": "src/assets/knowme.png"
@@ -112,12 +112,16 @@
     "file": "assets/secuirty-82321cc2.png",
     "src": "src/assets/secuirty.png"
   },
+  "src/assets/twitter.png": {
+    "file": "assets/twitter-8a3b1ee9.png",
+    "src": "src/assets/twitter.png"
+  },
   "src/assets/umbrellas.png": {
     "file": "assets/umbrellas-6992eb8f.png",
     "src": "src/assets/umbrellas.png"
   },
   "src/main.css": {
-    "file": "assets/main-5cdb8804.css",
+    "file": "assets/main-82d96b04.css",
     "src": "src/main.css"
   },
   "src/main.js": {
@@ -139,17 +143,17 @@
       "assets/16540-01 1-8acd324f.png",
       "assets/hero2giveaway-72f9f8ea.png",
       "assets/dropLogo-e6a9ccac.png",
+      "assets/twitter-8a3b1ee9.png",
+      "assets/discord-c5bb956b.png",
       "assets/banner-ffc15c5b.png",
-      "assets/image13-d1b59548.png",
-      "assets/image 12-82ee70f5.png",
       "assets/7148456_Mesa de trabajo 1 2-74d298c4.png",
       "assets/iconimage-8e87896a.png",
       "assets/abcexplorerBanner-ecb54d58.png"
     ],
     "css": [
-      "assets/main-5cdb8804.css"
+      "assets/main-82d96b04.css"
     ],
-    "file": "assets/main-d7b47fce.js",
+    "file": "assets/main-7e1696da.js",
     "isEntry": true,
     "src": "src/main.js"
   }
