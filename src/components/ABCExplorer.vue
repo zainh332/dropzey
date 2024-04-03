@@ -5,24 +5,54 @@
     <div class="px-1">
       <div class="">
         <h1 class="mainHeading flex md:flex-row flex-col gap-6">
-          Transaction #172
-          <p>30-Jun-2022 - 09:25</p>
+          Transaction #{{ transactionNumber }}
+          <p>{{ transactionDate }}</p>
         </h1>
 
         <p class="paragraph">
-          <span class="green">GARATAHLKN....ZUJKMALQKVNLN6</span> claimbed
-          <span class="green">Airdrop Reward</span>
+          <span class="green">{{ transactionSender }}</span> 
+          {{ transactionName }} 
+          <span class="green">{{ transactionType }}</span>
         </p>
       </div>
     </div>
     <div class="">
-      <a class="btn" href="#">View on Explorer</a>
+      <a class="btn" :href="explorerLink" target="_blank">View on Explorer</a>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script>
+export default {
+  props: {
+    transactionNumber: {
+      type: String,
+      required: true
+    },
+    transactionDate: {
+      type: String,
+      required: true
+    },
+    transactionSender: {
+      type: String,
+      required: true
+    },
+    transactionName: {
+      type: String,
+      required: true
+    },
+    transactionType: {
+      type: String,
+      required: true
+    },
+    explorerLink: {
+      type: String,
+      required: true
+    }
+  }
+}
 
+</script>
 <style scoped>
 .abcExplorer {
   border-radius: 8px;
