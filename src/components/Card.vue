@@ -1,252 +1,60 @@
 <template>
   <div class="grid md:grid-cols-3 grid-cols-1 gap-4 lg:grid-cols-4">
-    <router-link to="/airdrop">
+    <component v-for="(air, index) in airdrops" :key="index">
+      <router-link :to="'/airdrop?id='+ air.ids ">
         <div class="card">
           <div class="section1 flex items-center gap-8">
             <div class="frame h-14 w-14 bg-[#F7F7F7] flex items-center justify-center rounded-md">
-              <img :src="icon1" alt="" />
+              <img :src="air.logo|| icon1" alt="" />
             </div>
-            <h1 class="card_head">Tezos Domains</h1>
+            <h1 class="card_head">{{ air.name }}</h1>
           </div>
           <div class="section2 flex my-6 items-center divide-x-2 justify-between">
-            <div class="flex items-start flex-col w-[50%]">
-              <h1 class="card_bold">$4.159</h1>
-              <p class="text-xs text-gray-500 font-medium">Airdroppool</p>
+            <div class="flex  flex-col w-[50%]" style="align-items: center;">
+              <h1 class="card_bold" style="text-align: center;">{{ (air.reward_amount/1E7).toLocaleString() }}</h1>
+              <p class="text-xs text-gray-500 font-medium">{{ JSON.parse(air.asset).code }} Airdroped</p>
             </div>
-            <div class="flex items-end flex-col w-[50%]">
-              <h1 class="card_bold">1.3 million</h1>
-              <div class="w-[58%]">
-                <p class="text-xs text-gray-500 font-medium text-left">WSL</p>
+            <div class="flex  flex-col w-[50%]" style="align-items: center;">
+              <div class="card_bold" >{{ fNum((air.amount/1E7), 'long')  }}</div>
+              <div class="w-[58%]" style="text-align: center;">
+                <span class="text-xs text-gray-500 font-medium text-left">{{ JSON.parse(air.asset).code }}</span>
               </div>
             </div>
           </div>
           <div class="section3">
             <div class="tags flex items-center gap-3">
-              <div class="tag">Active</div>
-              <div class="tag1">4 days left</div>
-              <button @click="setAirdrop" class="tag1">Claim Now</button>
-              <!-- <div class="tag1">Claim Now</div> -->
-            </div>
-          </div>
-        </div>
-    </router-link>
-    <router-link to="/airdrop">
-        <div class="card">
-          <div class="section1 flex items-center gap-8">
-            <div class="frame h-14 w-14 bg-[#F7F7F7] flex items-center justify-center rounded-md">
-              <img :src="icon1" alt="" />
-            </div>
-            <h1 class="card_head">Tezos Domains</h1>
-          </div>
-          <div class="section2 flex my-6 items-center divide-x-2 justify-between">
-            <div class="flex items-start flex-col w-[50%]">
-              <h1 class="card_bold">$4.159</h1>
-              <p class="text-xs text-gray-500 font-medium">Airdroppool</p>
-            </div>
-            <div class="flex items-end flex-col w-[50%]">
-              <h1 class="card_bold">1.3 million</h1>
-              <div class="w-[58%]">
-                <p class="text-xs text-gray-500 font-medium text-left">WSL</p>
+              <div class="tag" v-if="(air.end_day > 0)">Active</div>
+              <div class="tag1">
+                {{ (air.end_day > 0) ? `${air.end_day} ${plural(air.end_day, 'day', 'days')} left` : 'Ended' }}  
               </div>
-            </div>
-          </div>
-          <div class="section3">
-            <div class="tags flex items-center gap-3">
-              <div class="tag">Active</div>
-              <div class="tag1">4 days left</div>
               <button @click="setAirdrop" class="tag1">Claim Now</button>
               <!-- <div class="tag1">Claim Now</div> -->
             </div>
           </div>
         </div>
-    </router-link>
-    <router-link to="/airdrop">
-        <div class="card">
-          <div class="section1 flex items-center gap-8">
-            <div class="frame h-14 w-14 bg-[#F7F7F7] flex items-center justify-center rounded-md">
-              <img :src="icon1" alt="" />
-            </div>
-            <h1 class="card_head">Tezos Domains</h1>
-          </div>
-          <div class="section2 flex my-6 items-center divide-x-2 justify-between">
-            <div class="flex items-start flex-col w-[50%]">
-              <h1 class="card_bold">$4.159</h1>
-              <p class="text-xs text-gray-500 font-medium">Airdroppool</p>
-            </div>
-            <div class="flex items-end flex-col w-[50%]">
-              <h1 class="card_bold">1.3 million</h1>
-              <div class="w-[58%]">
-                <p class="text-xs text-gray-500 font-medium text-left">WSL</p>
-              </div>
-            </div>
-          </div>
-          <div class="section3">
-            <div class="tags flex items-center gap-3">
-              <div class="tag">Active</div>
-              <div class="tag1">4 days left</div>
-              <button @click="setAirdrop" class="tag1">Claim Now</button>
-              <!-- <div class="tag1">Claim Now</div> -->
-            </div>
-          </div>
-        </div>
-    </router-link>
-    <router-link to="/airdrop">
-        <div class="card">
-          <div class="section1 flex items-center gap-8">
-            <div class="frame h-14 w-14 bg-[#F7F7F7] flex items-center justify-center rounded-md">
-              <img :src="icon1" alt="" />
-            </div>
-            <h1 class="card_head">Tezos Domains</h1>
-          </div>
-          <div class="section2 flex my-6 items-center divide-x-2 justify-between">
-            <div class="flex items-start flex-col w-[50%]">
-              <h1 class="card_bold">$4.159</h1>
-              <p class="text-xs text-gray-500 font-medium">Airdroppool</p>
-            </div>
-            <div class="flex items-end flex-col w-[50%]">
-              <h1 class="card_bold">1.3 million</h1>
-              <div class="w-[58%]">
-                <p class="text-xs text-gray-500 font-medium text-left">WSL</p>
-              </div>
-            </div>
-          </div>
-          <div class="section3">
-            <div class="tags flex items-center gap-3">
-              <div class="tag">Active</div>
-              <div class="tag1">4 days left</div>
-              <button @click="setAirdrop" class="tag1">Claim Now</button>
-              <!-- <div class="tag1">Claim Now</div> -->
-            </div>
-          </div>
-        </div>
-    </router-link>
-    <router-link to="/airdrop">
-        <div class="card">
-          <div class="section1 flex items-center gap-8">
-            <div class="frame h-14 w-14 bg-[#F7F7F7] flex items-center justify-center rounded-md">
-              <img :src="icon1" alt="" />
-            </div>
-            <h1 class="card_head">Tezos Domains</h1>
-          </div>
-          <div class="section2 flex my-6 items-center divide-x-2 justify-between">
-            <div class="flex items-start flex-col w-[50%]">
-              <h1 class="card_bold">$4.159</h1>
-              <p class="text-xs text-gray-500 font-medium">Airdroppool</p>
-            </div>
-            <div class="flex items-end flex-col w-[50%]">
-              <h1 class="card_bold">1.3 million</h1>
-              <div class="w-[58%]">
-                <p class="text-xs text-gray-500 font-medium text-left">WSL</p>
-              </div>
-            </div>
-          </div>
-          <div class="section3">
-            <div class="tags flex items-center gap-3">
-              <div class="tag">Active</div>
-              <div class="tag1">4 days left</div>
-              <button @click="setAirdrop" class="tag1">Claim Now</button>
-              <!-- <div class="tag1">Claim Now</div> -->
-            </div>
-          </div>
-        </div>
-    </router-link>
-    <router-link to="/airdrop">
-        <div class="card">
-          <div class="section1 flex items-center gap-8">
-            <div class="frame h-14 w-14 bg-[#F7F7F7] flex items-center justify-center rounded-md">
-              <img :src="icon1" alt="" />
-            </div>
-            <h1 class="card_head">Tezos Domains</h1>
-          </div>
-          <div class="section2 flex my-6 items-center divide-x-2 justify-between">
-            <div class="flex items-start flex-col w-[50%]">
-              <h1 class="card_bold">$4.159</h1>
-              <p class="text-xs text-gray-500 font-medium">Airdroppool</p>
-            </div>
-            <div class="flex items-end flex-col w-[50%]">
-              <h1 class="card_bold">1.3 million</h1>
-              <div class="w-[58%]">
-                <p class="text-xs text-gray-500 font-medium text-left">WSL</p>
-              </div>
-            </div>
-          </div>
-          <div class="section3">
-            <div class="tags flex items-center gap-3">
-              <div class="tag">Active</div>
-              <div class="tag1">4 days left</div>
-              <button @click="setAirdrop" class="tag1">Claim Now</button>
-              <!-- <div class="tag1">Claim Now</div> -->
-            </div>
-          </div>
-        </div>
-    </router-link>
-    <router-link to="/airdrop">
-        <div class="card">
-          <div class="section1 flex items-center gap-8">
-            <div class="frame h-14 w-14 bg-[#F7F7F7] flex items-center justify-center rounded-md">
-              <img :src="icon1" alt="" />
-            </div>
-            <h1 class="card_head">Tezos Domains</h1>
-          </div>
-          <div class="section2 flex my-6 items-center divide-x-2 justify-between">
-            <div class="flex items-start flex-col w-[50%]">
-              <h1 class="card_bold">$4.159</h1>
-              <p class="text-xs text-gray-500 font-medium">Airdroppool</p>
-            </div>
-            <div class="flex items-end flex-col w-[50%]">
-              <h1 class="card_bold">1.3 million</h1>
-              <div class="w-[58%]">
-                <p class="text-xs text-gray-500 font-medium text-left">WSL</p>
-              </div>
-            </div>
-          </div>
-          <div class="section3">
-            <div class="tags flex items-center gap-3">
-              <div class="tag">Active</div>
-              <div class="tag1">4 days left</div>
-              <button @click="setAirdrop" class="tag1">Claim Now</button>
-              <!-- <div class="tag1">Claim Now</div> -->
-            </div>
-          </div>
-        </div>
-    </router-link>
-    <router-link to="/airdrop">
-        <div class="card">
-          <div class="section1 flex items-center gap-8">
-            <div class="frame h-14 w-14 bg-[#F7F7F7] flex items-center justify-center rounded-md">
-              <img :src="icon1" alt="" />
-            </div>
-            <h1 class="card_head">Tezos Domains</h1>
-          </div>
-          <div class="section2 flex my-6 items-center divide-x-2 justify-between">
-            <div class="flex items-start flex-col w-[50%]">
-              <h1 class="card_bold">$4.159</h1>
-              <p class="text-xs text-gray-500 font-medium">Airdroppool</p>
-            </div>
-            <div class="flex items-end flex-col w-[50%]">
-              <h1 class="card_bold">1.3 million</h1>
-              <div class="w-[58%]">
-                <p class="text-xs text-gray-500 font-medium text-left">WSL</p>
-              </div>
-            </div>
-          </div>
-          <div class="section3">
-            <div class="tags flex items-center gap-3">
-              <div class="tag">Active</div>
-              <div class="tag1">4 days left</div>
-              <button @click="setAirdrop" class="tag1">Claim Now</button>
-              <!-- <div class="tag1">Claim Now</div> -->
-            </div>
-          </div>
-        </div>
-    </router-link>
-
+    </router-link>     
+    </component>
+   
   </div>
 </template>
 
 <script setup>
 import icon1 from "@/assets/icon-1.png";
-// import icon1 from "@/assets/icon-1.png";
+import { fNum, plural } from "../utils/utils";
+import { ref, defineProps } from "vue";
+const airdrops = ref([])
+const props = defineProps({
+  airdrops: {
+    type: Object,
+    required: true
+  }
+}); 
+
+(function() {  
+    if(props.airdrops) {
+       airdrops.value = props.airdrops.slice(0, 8)
+    }
+})()
 </script>
 
 <style scoped>
