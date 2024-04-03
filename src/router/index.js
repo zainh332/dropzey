@@ -107,6 +107,15 @@ const router = createRouter({
 
 // Set the page title dynamically when the route changes
 router.beforeEach((to, from, next) => {
+  //check if it has logged in
+  const isLoggedIn = localStorage.getItem('login') || 'false'
+  const too = to.meta.title.toLowerCase()
+  if(too == 'profile') {
+    //redirect back if not logged in
+    if(isLoggedIn == 'false') {
+       next('/')
+    }
+  }
   document.title = to.meta.title + "  | Dropzey";
   next();
 });

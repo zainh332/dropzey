@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative" >
     <Disclosure as="nav" class="bg_gradient" v-slot="{ open }">
       <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-20">
@@ -22,7 +22,7 @@
             </div>
             <div class="items-center hidden pl-8 sm:ml-6 sm:flex">
               <div class="flex space-x-4">
-                <router-link v-for="item in navigation" :key="item.name" :to="item.href" :class="[
+                <router-link v-for="item in fNavigation()" :key="item.name" :to="item.href" :class="[
                   'rounded-md flex items-center gap-x-2   px-3 text-white py-2 text-sm font-normal',
                 ]" :aria-current="item.current ? 'page' : undefined"><span>{{ item.name }}</span>
                 </router-link>
@@ -31,7 +31,7 @@
           </div>
           <div class="absolute inset-y-0 right-0 flex items-center gap-3 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
 
-            <button @click="OpenWalletModal" class="px-4 py-2 text-xs font-semibold text-white bg-transparent border border-white rounded-full sm:px-6 sm:text-sm">
+            <button id="walletConnected" @click="OpenWalletModal" class="px-4 py-2 text-xs font-semibold text-white bg-transparent border border-white rounded-full sm:px-6 sm:text-sm">
               Connect Wallet
             </button>
 
@@ -39,16 +39,18 @@
             <div class="hidden lg:block lg:h-6 lg:w-px lg:bg-gray-900/10" aria-hidden="true" />
 
             <button
+              v-show="!isLoggedIn"
               @click="OpenSignInModal"
               class="px-4 py-2 text-xs font-semibold text-white bg-transparent border border-white rounded-full sm:px-6 sm:text-sm">
               Sign In
             </button>
-
-            <!-- <button @click="toggleDropdown" class="-m-1.5 flex items-center p-1.5">
+            
+             
+            <button v-show="isLoggedIn" @click="toggleDropdown" class="-m-1.5 flex items-center p-1.5">
               <img class="w-8 h-8 rounded-full bg-gray-50"
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                :src="userImg"
                 alt="" />
-            </button> -->
+            </button> 
 
             <transition name="fade">
               <div v-if="isDropdownOpen" class="absolute right-0 z-10 mt-2 bg-white rounded-md shadow-lg top-full" style="top: 3rem; right: 10;">
@@ -57,9 +59,15 @@
                   v-for="item in profileNavigation"
                   :key="item.name"
                   :href="item.href"
+                  
                   class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
                 >
+                <span v-if="item.name.indexOf('Log') > -1" @click="logOut">
                   {{ item.name }}
+                </span>
+                <span v-else >
+                  {{ item.name }}
+                </span>
                 </a>
               </div>
             </transition>
@@ -104,20 +112,35 @@ import logo from "@/assets/logo.png";
 import Arrow from "@/svgs/Arrow.vue";
 import MG from "@/svgs/MG.vue";
 import { ref } from 'vue';
+import {
+    getPublicKey,
+} from "@stellar/freighter-api";
 import ConnectWalletModal from "@/components/ConnectWallet.vue";
 import SigninModal from "@/components/SignIn.vue";
+import { E, getCookie, hasLogin, saveToken } from '../utils/utils'
+import { getF, getProfile } from '../utils/api'
+import { API_URL } from "../utils/constant";
 
 const signInModal  = ref(false);
+const urlParams = new URLSearchParams(window.location.search);
+
 const OpenSignInModal = (e) => {
-  signInModal.value = true;
-  // signInModal.value = !signInModal.value;
+  if(signInModal.value) {signInModal.value = false}
+  setTimeout(() => {
+    signInModal.value = true;
+  }, 100)
 };
 
 const ConnectWalletModals  = ref(false);
+const isLoggedIn = ref(hasLogin());
+const userImg = ref("");
 
 const OpenWalletModal = (e) => {
   e.preventDefault();
-  ConnectWalletModals.value = !ConnectWalletModals.value;
+    if(ConnectWalletModals.value){ConnectWalletModals.value = false}
+    setTimeout(() => {
+      ConnectWalletModals.value = !ConnectWalletModals.value;
+    }, 100)
 };
 
 
@@ -129,9 +152,19 @@ const navigation = [
   { name: "Profile Page", href: "/profile", current: false },
 ];
 
+const fNavigation = () => {
+      // Apply your filtering logic here
+      return navigation.filter(item => {
+         if(item.name == 'Profile Page' && !isLoggedIn.value) {return false}
+         return true
+      });
+}
+
+ 
+
 const profileNavigation = [
   { name: "View Profile", href: "/profile", current: false },
-  { name: "Log Out", href: "#", current: false },
+  { name: "Log Out", href:"", current: false },
 ];
 
 const isDropdownOpen = ref(false);
@@ -140,7 +173,94 @@ const toggleDropdown = () => {
   isDropdownOpen.value = !isDropdownOpen.value;
 };
 
-const isLoggedIn = ref(true);
+
+const logOut = () => {
+  localStorage.setItem('login', 'false')
+  isLoggedIn.value = false
+  speak('logg', false)
+}
+//create listener to listen for connected changes
+hear('connected', async (status) => {
+    if(status) {
+      //has been connected, do the needfull
+      if(E('walletConnected')) {
+        const walletKey = await getPublicKey()
+        E('walletConnected').innerText = walletKey.substring(0, 6) + '...' + walletKey.substring(walletKey.length - 4)
+      }
+    }
+    else {
+      //has disconnected
+      E('walletConnected').innerText = "Connect Wallet"
+    }
+})
+
+//create listener to listen for connected changes
+hear('logg', async (status) => {
+    if(status) {
+       isLoggedIn.value = true
+       localStorage.setItem('login', 'true')
+       userImg.value = ((await getProfile()) || {img:"https://dropzey.com/public/build/assets/iconimage-8e87896a.png"})['img'] 
+    }
+    else {
+      isLoggedIn.value = false
+      localStorage.setItem('login', 'false')
+      saveToken('USER', "", "once") 
+      saveToken('USER_F', "", "once") 
+    }
+})
+
+//create listener to listen for connect wallet buttons
+hear('toggle_wallet', async (status) => {
+    if(status) {
+      if(ConnectWalletModals.value){ConnectWalletModals.value = false}
+      setTimeout(() => {
+        ConnectWalletModals.value = !ConnectWalletModals.value;
+      }, 100)
+    }
+    else {
+      ConnectWalletModals.value = false
+    }
+})
+
+//create listener to listen for sign up
+hear('toggle_sign', async (status) => {
+    if(status) {
+      if(signInModal.value) {signInModal.value = false}
+      setTimeout(() => {
+        signInModal.value = true;
+      }, 100)
+    }
+    else {
+      signInModal.value = false
+    }
+})
+const checkLogin = async () => {
+  if(hasLogin()) {
+    userImg.value = ((await getProfile()) || {img:"https://dropzey.com/public/build/assets/iconimage-8e87896a.png"})['img'] 
+  }
+}
+checkLogin() 
+//extract github_auth code for github logging
+const auth = (urlParams.get('auth') || "");
+const discordAuth = (urlParams.get('discord_auth') || "");
+const sMain = async() => {
+  //save back the auth
+  if(auth != "") {
+    const f = await getF()
+    if(f !== false) {  
+      saveToken('USER', auth, 'forever')
+      saveToken('USER_F', f, 'forever')
+      speak('logg', true) 
+      //redirect to profile page
+      window.location = '/profile'
+    }
+  }
+  else if(discordAuth != "" && getCookie('USER') != "") {
+    //redirect back to complete the process
+    window.location = API_URL + 'api.php?type=discord_auth_v1&access_token=' + discordAuth + '&token=' + getCookie('USER')
+  }
+}
+sMain()
 
 </script>
 
